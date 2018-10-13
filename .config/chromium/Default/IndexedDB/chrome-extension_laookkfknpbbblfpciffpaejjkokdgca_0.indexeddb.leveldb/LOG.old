@@ -1,3 +1,3 @@
-2018/10/13-21:28:32.636 11308 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/chrome-extension_laookkfknpbbblfpciffpaejjkokdgca_0.indexeddb.leveldb/MANIFEST-000001
-2018/10/13-21:28:32.636 11308 Recovering log #3
-2018/10/13-21:28:32.668 11308 Reusing old log /home/uygar/.config/chromium/Default/IndexedDB/chrome-extension_laookkfknpbbblfpciffpaejjkokdgca_0.indexeddb.leveldb/000003.log 
+2018/10/13-21:39:00.915 26077 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/chrome-extension_laookkfknpbbblfpciffpaejjkokdgca_0.indexeddb.leveldb/MANIFEST-000001
+2018/10/13-21:39:00.915 26077 Recovering log #3
+2018/10/13-21:39:00.945 26077 Reusing old log /home/uygar/.config/chromium/Default/IndexedDB/chrome-extension_laookkfknpbbblfpciffpaejjkokdgca_0.indexeddb.leveldb/000003.log 
