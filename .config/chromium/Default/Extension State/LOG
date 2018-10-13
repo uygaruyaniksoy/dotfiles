@@ -1,0 +1,42 @@
+2018/10/10-23:08:24.784 1778 Reusing MANIFEST /home/uygar/.config/chromium/Default/Extension State/MANIFEST-000001
+2018/10/10-23:08:24.785 1778 Recovering log #559
+2018/10/10-23:08:24.802 1778 Reusing old log /home/uygar/.config/chromium/Default/Extension State/000559.log 
+2018/10/10-20:49:19.867 2640 Level-0 table #563: started
+2018/10/10-20:49:19.885 2640 Level-0 table #563: 4192256 bytes OK
+2018/10/10-20:49:19.887 2640 Delete type=0 #559
+2018/10/10-20:49:19.888 2640 Compacting 4@0 + 1@1 files
+2018/10/10-20:49:19.926 2640 Generated table #564@0: 7 keys, 16977 bytes
+2018/10/10-20:49:19.926 2640 Compacted 4@0 + 1@1 files => 16977 bytes
+2018/10/10-20:49:19.928 2640 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/10/10-20:49:19.928 2640 Delete type=2 #557
+2018/10/10-20:49:19.928 2640 Delete type=2 #563
+2018/10/10-20:49:19.928 2640 Delete type=2 #560
+2018/10/10-20:49:19.929 2640 Delete type=2 #555
+2018/10/10-20:49:19.930 2640 Delete type=2 #552
+2018/10/11-18:01:22.446 2640 Level-0 table #566: started
+2018/10/11-18:01:22.465 2640 Level-0 table #566: 4195838 bytes OK
+2018/10/11-18:01:22.467 2640 Delete type=0 #562
+2018/10/11-20:51:24.225 2640 Level-0 table #568: started
+2018/10/11-20:51:24.244 2640 Level-0 table #568: 4194046 bytes OK
+2018/10/11-20:51:24.246 2640 Delete type=0 #565
+2018/10/11-22:36:51.002 2640 Level-0 table #570: started
+2018/10/11-22:36:51.022 2640 Level-0 table #570: 4197253 bytes OK
+2018/10/11-22:36:51.024 2640 Delete type=0 #567
+2018/10/12-19:29:34.168 2640 Level-0 table #572: started
+2018/10/12-19:29:34.314 2640 Level-0 table #572: 4194050 bytes OK
+2018/10/12-19:29:34.317 2640 Delete type=0 #569
+2018/10/12-19:29:34.318 2640 Compacting 4@0 + 1@1 files
+2018/10/12-19:29:34.750 2640 Generated table #573@0: 7 keys, 16977 bytes
+2018/10/12-19:29:34.750 2640 Compacted 4@0 + 1@1 files => 16977 bytes
+2018/10/12-19:29:34.752 2640 compacted to: files[ 0 1 1 0 0 0 0 ]
+2018/10/12-19:29:34.752 2640 Delete type=2 #570
+2018/10/12-19:29:34.753 2640 Delete type=2 #572
+2018/10/12-19:29:34.753 2640 Delete type=2 #564
+2018/10/12-19:29:34.753 2640 Delete type=2 #566
+2018/10/12-19:29:34.754 2640 Delete type=2 #568
+2018/10/12-23:17:42.335 2640 Level-0 table #575: started
+2018/10/12-23:17:42.485 2640 Level-0 table #575: 4196171 bytes OK
+2018/10/12-23:17:42.489 2640 Delete type=0 #571
+2018/10/13-19:47:14.845 2640 Level-0 table #577: started
+2018/10/13-19:47:14.863 2640 Level-0 table #577: 4194814 bytes OK
+2018/10/13-19:47:14.866 2640 Delete type=0 #574

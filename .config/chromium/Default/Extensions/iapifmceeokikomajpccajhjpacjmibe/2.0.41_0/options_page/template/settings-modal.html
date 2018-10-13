@@ -1,0 +1,140 @@
+<div class="modal fade" tabindex="-1" role="dialog" id="settings-modal">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-6">
+            <!-- Check iFrames -->
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="checkiFrames" prop="checkiFrames">
+              <label class="custom-control-label" for='checkiFrames'>
+                <h6 class="mb-0" data-title="Check iFrames" data-content="Check this box if you want to check xPath within iFrames also"
+                  data-toggle="popover" data-html="true" data-trigger="hover">Check iFrames</h6>
+              </label>
+            </div>
+          </div>
+          <div class="col-6 border-left">
+            <!-- On Load -->
+            <h6 class="d-inline mr-2">Load With</h6>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="onLoadWindow" name="onLoad" value="0" class="custom-control-input" prop="load">
+              <label class="custom-control-label" for="onLoadWindow">
+                <h6 class="mb-0" data-title="Load With Window" data-content="Extension is loaded when all content of page is loaded e.g. stylesheets, images, subforms &lt;br/>&lt;span class='text-primary'>* Slower than Document&lt;span>"
+                  data-toggle="popover" data-html="true" data-trigger="hover">Window</h6>
+              </label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" id="onLoadDocument" name="onLoad" value="1" class="custom-control-input" prop="load">
+              <label class="custom-control-label" for="onLoadDocument">
+                <h6 class="mb-0" data-title="Load With Document" data-content="Extension is loaded without waiting for stylesheets, images, and subframes to finish loading &lt;br/>&lt;span class='text-primary'>* Faster than Window&lt;span>"
+                  data-toggle="popover" data-html="true" data-trigger="hover">Document</h6>
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+
+        <!-- Retry -->
+        <div class="row">
+          <div class="col-6">
+            <div class="input-group">
+              <div class="input-group-prepend" data-title="Retry" data-content="Provide specific no of time xpath need to be retry if its not found."
+                data-toggle="popover" data-html="true" data-trigger="hover">
+                <span class="input-group-text">Retry</a>
+              </div>
+              <input type="number" class="form-control" prop="retry" placeholder="5" />
+            </div>
+          </div>
+          <div class="col-6">
+            <!-- Retry Interval -->
+            <div class="input-group">
+              <div class="input-group-prepend" data-title="Retry Interval" data-content="Provide interval/delay in sec for retry operation to wait before retrying."
+                data-toggle="popover" data-html="true" data-trigger="hover">
+                <span class="input-group-text">Retry Interval</a>
+              </div>
+              <input type="number" class="form-control" prop="retryInterval" placeholder="1" />
+              <div class="input-group-append">
+                <span class="input-group-text">sec</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h6 class="my-3 mx-1 text-secondary font-weight-light"><small>* Below are action which can be performed if xpath is not found by extension after retry</small></h6>
+          </div>
+          <div class="col-3">
+            <!-- Stop -->
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="retryOption" value="0" id="stop" prop="retryOption">
+              <label class="custom-control-label" for='stop'>
+                <h6 class="mb-0" data-title="Stop" data-content="Do nothing. Stop extension without procedding further" data-toggle="popover"
+                  data-html="true" data-trigger="hover">Stop</h6>
+              </label>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- Skip Not Found -->
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="retryOption" value="1" id="skip" prop="retryOption">
+              <label class="custom-control-label" for='skip'>
+                <h6 class="mb-0" data-title="Skip Not Found" data-content="it will skip current action and continue next action" data-toggle="popover"
+                  data-html="true" data-trigger="hover">Skip</h6>
+              </label>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- Check iFrames -->
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" name="retryOption" value="2" id="refresh-page" prop="retryOption">
+              <label class="custom-control-label" for='refresh-page'>
+                <h6 class="mb-0" data-title="Retry Refresh" data-content="it will refresh whole page" data-toggle="popover" data-html="true"
+                  data-trigger="hover">Refresh Page</h6>
+              </label>
+            </div>
+          </div>
+          <div class="col-3 border-left">
+            <!-- Enable Notification -->
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="notifications" prop="notifications">
+              <label class="custom-control-label" for='notifications'>
+                <h6 class="mb-0" data-title="Show Popup Notifications" data-content="it will show popup notification with error (e.g. wrong or invalid xpath)"
+                  data-toggle="popover" data-html="true" data-trigger="hover">Show Popup</h6>
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Export -->
+        <div class="bg-danger text-light p-2 rounded">
+          <h6>Configuration
+            <small class="m-1 font-weight-normal">* Import functionality will override all current configuration</small>
+          </h6>
+          <div class="row">
+            <div class="col-2">
+              <button type="button" class="btn btn-primary mr-2" id="export">Export</button>
+            </div>
+            <div class="col-4">
+              <div class="input-group">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" accept=".json" id="import">
+                  <label class="custom-file-label" for="import" style="font-size: 1rem;font-weight: 400;">Import</label>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

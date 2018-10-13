@@ -1,0 +1,72 @@
+Starting OmniSharp server at 2018-9-7 16:56:02
+    Target: /home/uygar/Project/Binold/Binold.sln
+
+OmniSharp server started
+    Path: /home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/run
+    PID: 23673
+
+﻿[info]: OmniSharp.Stdio.Host
+        Starting OmniSharp on linuxmint 19.0 (x64)
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Located 1 MSBuild instance(s)
+            1: StandAlone 15.0 - "/home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild/15.0/Bin"
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        MSBUILD_EXE_PATH environment variable set to '/home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild/15.0/Bin/MSBuild.dll'
+[info]: OmniSharp.MSBuild.Discovery.MSBuildLocator
+        Registered MSBuild instance: StandAlone 15.0 - "/home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild/15.0/Bin"
+            MSBuildExtensionsPath = /home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild
+            BypassFrameworkInstallChecks = true
+            CscToolPath = /home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild/15.0/Bin/Roslyn
+            CscToolExe = csc.exe
+            MSBuildToolsPath = /home/uygar/.vscode/extensions/ms-vscode.csharp-1.15.2/.omnisharp/1.30.1/omnisharp/msbuild/15.0/Bin
+            TargetFrameworkRootPath = /usr/lib/mono/xbuild-frameworks
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Detecting Cake files in '/home/uygar/Project/Binold'.
+[info]: OmniSharp.Cake.CakeProjectSystem
+        Could not find any Cake files
+[info]: OmniSharp.DotNet.DotNetProjectSystem
+        Initializing in /home/uygar/Project/Binold
+[info]: OmniSharp.DotNet.DotNetProjectSystem
+        Auto package restore: False
+[info]: OmniSharp.DotNet.DotNetProjectSystem
+        Update workspace context
+[info]: OmniSharp.DotNet.DotNetProjectSystem
+        Resolving projects references
+[info]: OmniSharp.MSBuild.ProjectSystem
+        Detecting projects in '/home/uygar/Project/Binold/Binold.sln'.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/uygar/Project/Binold/Assembly-CSharp.csproj'
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Detecting CSX files in '/home/uygar/Project/Binold'.
+[info]: OmniSharp.Script.ScriptProjectSystem
+        Could not find any CSX files
+[info]: OmniSharp.Stdio.Host
+        Invoking Workspace Options Provider: OmniSharp.Roslyn.CSharp.Services.CSharpWorkspaceOptionsProvider
+[info]: OmniSharp.Stdio.Host
+        Configuration finished.
+[info]: OmniSharp.Stdio.Host
+        Omnisharp server running using Stdio at location '/home/uygar/Project/Binold' on host 23598.
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/uygar/Project/Binold/Assembly-CSharp.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Adding project '/home/uygar/Project/Binold/Assembly-CSharp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Assembly-CSharp
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/uygar/Project/Binold/Assembly-CSharp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/uygar/Project/Binold/Assembly-CSharp.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Assembly-CSharp
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/uygar/Project/Binold/Assembly-CSharp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/uygar/Project/Binold/Assembly-CSharp.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Assembly-CSharp
+[info]: OmniSharp.MSBuild.ProjectManager
+        Queue project update for '/home/uygar/Project/Binold/Assembly-CSharp.csproj'
+[info]: OmniSharp.MSBuild.ProjectManager
+        Loading project: /home/uygar/Project/Binold/Assembly-CSharp.csproj
+[info]: OmniSharp.MSBuild.ProjectManager
+        Update project: Assembly-CSharp

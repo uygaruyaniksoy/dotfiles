@@ -1,0 +1,292 @@
+[Info  - 22:26:04] Using tsserver from: /usr/share/code/resources/app/extensions/node_modules/typescript/lib
+[Info  - 22:26:04] Forking TSServer
+PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.dotnet/tools 
+[Info  - 22:26:04] Started TSServer
+[Error  - 23:15:37] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":133,"end":194} and {"pos":176,"end":191}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":133,"end":194} and {"pos":176,"end":191}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:19] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":362} and {"pos":344,"end":359}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":362} and {"pos":344,"end":359}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:21] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":362} and {"pos":344,"end":359}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":362} and {"pos":344,"end":359}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:22] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":359} and {"pos":341,"end":356}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":359} and {"pos":341,"end":356}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:24] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:24] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:17:25] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":301,"end":366} and {"pos":348,"end":363}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)
+[Error  - 23:21:37] 'getCodeFixes' request failed with error.
+Error processing request. Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":133,"end":194} and {"pos":176,"end":191}
+Error: Debug Failure. False expression: Changes overlap
+Verbose Debug Information: {"pos":133,"end":194} and {"pos":176,"end":191}
+    at _loop_11 (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103395:34)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103401:25
+    at Array.map (<anonymous>)
+    at Object.getTextChangesFromChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103389:86)
+    at ChangeTracker.getChanges (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103366:45)
+    at Function.ChangeTracker.with (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:102942:32)
+    at Object.getCodeActions (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:104324:64)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:121
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:103896:23)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111747:35
+    at Object.flatMap (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:498:25)
+    at Object.getCodeFixesAtPosition (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:111745:23)
+    at IOSession.Session.getCodeFixes (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119339:64)
+    at Session.handlers.ts.createMapFromTemplate._a.(anonymous function) (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:118213:61)
+    at /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:88
+    at IOSession.Session.executeWithRequestId (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119487:28)
+    at IOSession.Session.executeCommand (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119496:33)
+    at IOSession.Session.onMessage (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:119516:35)
+    at Interface.<anonymous> (/usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js:120770:27)
+    at emitOne (events.js:116:13)
+    at Interface.emit (events.js:211:7)
+    at Interface._onLine (readline.js:282:10)
+    at Interface._normalWrite (readline.js:424:12)
+    at Socket.ondata (readline.js:141:10)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at Pipe.onread (net.js:594:20)

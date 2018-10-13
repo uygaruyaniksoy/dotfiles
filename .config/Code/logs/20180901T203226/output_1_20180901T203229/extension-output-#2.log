@@ -1,0 +1,4 @@
+[Info  - 20:32:31] Using tsserver from: /usr/share/code/resources/app/extensions/node_modules/typescript/lib
+[Info  - 20:32:31] Forking TSServer
+PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.dotnet/tools 
+[Info  - 20:32:31] Started TSServer

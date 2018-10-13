@@ -1,0 +1,42 @@
+<form class="form-inline">
+  <div class="row">
+    <div class="col-sm">
+      <div class="input-group" data-title="Start Time" data-content="Now you can set specific time for auto click to start. its 24 hour format hours &lt;hr/>* 24:00:00 &lt;br/>* can be empty/blank" data-toggle="popover" data-html="true" data-trigger="hover">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Start Time</span>
+        </div>
+        <input type="text" class="form-control" prop="startTime" placeholder="hh:mm:ss" />
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="input-group" data-title="Intial Waiting" data-content="Specific time to wait before auto click start. Its value are in sec &lt;hr/>* 1 &lt;br/>* 1e5 defines range from 1-5 &lt;br/>* can be empty/blank" data-toggle="popover" data-html="true" data-trigger="hover">
+        <div class="input-group-prepend">
+          <a class="input-group-text" href="https://github.com/Dhruv-Techapps/auto-click/wiki/Init-Wait" target="_blank">Init Wait</a>
+        </div>
+        <input type="number" class="form-control" prop="initWait" placeholder="0" />
+        <div class="input-group-append">
+          <span class="input-group-text">sec</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="input-group" data-title="Batch Repeat" data-content="You can repeat below actions for more than one time. Its numeric field &lt;hr/>* 1 &lt;br/>* can be empty/blank &lt;br/>* -2 for endless repeat" data-toggle="popover" data-html="true" data-trigger="hover">
+        <div class="input-group-prepend">
+          <a class="input-group-text" href="https://github.com/Dhruv-Techapps/auto-click/wiki/Repeat" target="_blank">Repeat</a>
+        </div>
+        <input type="number" class="form-control" prop="repeat" placeholder="0" />
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="input-group" data-title="Batch Repeat Interval" data-content="Its dependent on repeat value &lt;br/> To run batch at specific interval provide time here. Its value are in sec &lt;hr/>* 1 &lt;br/>* 1e5 defines range from 1-5 &lt;br/>* can be empty/blank" data-toggle="popover" data-html="true" data-trigger="hover">
+        <div class="input-group-prepend">
+          <a class="input-group-text" href="https://github.com/Dhruv-Techapps/auto-click/wiki/Repeat-Interval" target="_blank">R-Interval</a>
+        </div>
+        <input type="number" class="form-control" prop="repeatInterval" placeholder="0" />
+        <div class="input-group-append">
+          <span class="input-group-text">sec</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

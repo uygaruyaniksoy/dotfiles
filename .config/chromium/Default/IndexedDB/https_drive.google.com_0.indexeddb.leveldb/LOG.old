@@ -1,0 +1,6 @@
+2018/10/09-21:07:36.063 30987 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/10/09-21:07:36.064 30987 Recovering log #57
+2018/10/09-21:07:36.064 30987 Reusing old log /home/uygar/.config/chromium/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000057.log 
+2018/10/09-21:08:24.915 32623 Level-0 table #61: started
+2018/10/09-21:08:24.931 32623 Level-0 table #61: 4533357 bytes OK
+2018/10/09-21:08:24.935 32623 Delete type=0 #57

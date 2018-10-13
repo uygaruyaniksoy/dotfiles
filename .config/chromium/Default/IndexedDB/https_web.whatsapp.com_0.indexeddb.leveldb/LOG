@@ -1,0 +1,6 @@
+2018/10/13-20:42:09.951 21223 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2018/10/13-20:42:09.952 21223 Recovering log #176
+2018/10/13-20:42:09.988 21223 Reusing old log /home/uygar/.config/chromium/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000176.log 
+2018/10/13-20:42:20.714 21220 Level-0 table #183: started
+2018/10/13-20:42:20.737 21220 Level-0 table #183: 1240514 bytes OK
+2018/10/13-20:42:20.738 21220 Delete type=0 #176

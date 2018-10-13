@@ -1,0 +1,40 @@
+<div class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Condition</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h6>Add condition to be checked before executing</h6>
+        <hr>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <input type="text" name="" value="" prop="xpath" class="form-control" placeholder="//element[@id='1']" />
+            </div>
+            <div class="col">
+              <select class="form-control" prop="condition">
+                <option value=""> ~~ Select Condition ~~ </option>
+                <option value="Equals"> = Equals</option>
+                <option value="Contains"> ~ Contains</option>
+                <option value="GreaterThan"> > Greater Than</option>
+                <option value="LessThan"> &lt; Less Than</option>
+                <option value="GreaterThanEquals"> >= Greater Than Equals</option>
+                <option value="LessThanEquals"> &lt;= Less Than Equals</option>
+              </select>
+            </div>
+            <div class="col">
+              <input type="text" name="" value="" prop="value" class="form-control" placeholder="value" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

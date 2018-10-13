@@ -1,0 +1,14 @@
+open_with xdg-open
+set_search_method 
+open_with pdf2ps
+open_with musescore
+find d
+delete 
+delete
+unmap 
+cd .steam/
+open_with ./
+pwd
+
+open_with 
+bulkrenz
