@@ -18,6 +18,7 @@
 .config/Trolltech.conf
 .config/Unity/
 .config/chromium/
+.config/configstore/
 .config/syncthing/
 .config/tomboy/
 .config/unity3d/
@@ -31,6 +32,7 @@
 .config/xfce4/
 .config/xviewer/
 .dmrc
+.dbus
 .dotnet/
 .emulator_console_auth_token
 .esd_auth
