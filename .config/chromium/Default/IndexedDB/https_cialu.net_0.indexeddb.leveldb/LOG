@@ -1,9 +1,0 @@
-2018/10/10-00:25:19.232 27350 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/https_cialu.net_0.indexeddb.leveldb/MANIFEST-000001
-2018/10/10-00:25:19.698 27251 Current memtable full; waiting...
-2018/10/10-00:25:19.698 20317 Level-0 table #5: started
-2018/10/10-00:25:19.700 20317 Level-0 table #5: 430 bytes OK
-2018/10/10-00:25:19.702 20317 Delete type=0 #3
-2018/10/10-00:25:19.702 20317 Level-0 table #7: started
-2018/10/10-00:25:19.702 20317 Level-0 table #7: 0 bytes OK
-2018/10/10-00:25:19.703 20317 Delete type=0 #4
-2018/10/10-00:25:19.704 20317 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

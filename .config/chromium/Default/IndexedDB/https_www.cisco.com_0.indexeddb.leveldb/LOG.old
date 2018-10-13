@@ -1,9 +1,0 @@
-2018/09/17-15:58:22.888 4771 Reusing MANIFEST /home/uygar/.config/chromium/Default/IndexedDB/https_www.cisco.com_0.indexeddb.leveldb/MANIFEST-000001
-2018/09/17-15:58:25.406 5290 Current memtable full; waiting...
-2018/09/17-15:58:25.406 22570 Level-0 table #5: started
-2018/09/17-15:58:25.409 22570 Level-0 table #5: 402 bytes OK
-2018/09/17-15:58:25.411 22570 Delete type=0 #3
-2018/09/17-15:58:25.412 22570 Level-0 table #7: started
-2018/09/17-15:58:25.412 22570 Level-0 table #7: 0 bytes OK
-2018/09/17-15:58:25.414 22570 Delete type=0 #4
-2018/09/17-15:58:25.414 22570 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
