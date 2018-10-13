@@ -7,6 +7,7 @@
 .Xclients
 .android-studio/
 .android/
+.aptitude/
 .atom/
 .bash_history
 .bash_logout
