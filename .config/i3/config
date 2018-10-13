@@ -70,11 +70,13 @@ set_from_resource $white	color15 #cccccc
 set $transparent		#00000000
 
 #                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
-client.focused		$red		$red		$magenta	$darkmagenta		#440000
-client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
+client.focused		$red		$red		$magenta	$darkmagenta		#550000
+client.unfocused	$transparent	$blue		$white		$darkblue		#220000
 client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
 client.urgent		$darkred	$darkred	$black		$darkred		$darkred
 client.background $black
+
+hide_edge_borders both 
 
 bar {
 	font pango:DejaVu Sans Mono, FontAwesome 8
