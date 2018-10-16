@@ -28,6 +28,7 @@
 .config/pulse/
 .config/tomboy/
 .config/unity3d/
+.config/libreoffice/
 .config/user-dirs.dirs
 .config/user-dirs.locale
 .config/viewnior/
