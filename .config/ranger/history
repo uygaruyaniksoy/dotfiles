@@ -10,8 +10,8 @@ open_with ./
 pwd
 
 bulkrenz
-delete
 touch jjjjjjjj
 open_with 
 rename grub_wallpapers
 rename wallpapers
+delete
