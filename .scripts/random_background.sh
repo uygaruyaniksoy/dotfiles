@@ -1,1 +1,1 @@
-wal -i $(echo ~/Pictures/wallpapers/"$(ls Pictures/space | shuf -n 1)") 
+wal -i $(echo ~/Pictures/wallpapers/"$(ls Pictures/wallpapers | shuf -n 1)") 
