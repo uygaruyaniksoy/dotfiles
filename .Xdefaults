@@ -1,0 +1,25 @@
+!! Appearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.background: black
+urxvt.foreground: gray
+!! Font prefferenes
+urxvt.font: xft:DejaVu Sans Mono:pixelsize=12
+urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=12:weight=bold
+urxvt.letterSpace: -1
+!! Larger history limit
+urxvt.saveLines: 1000000
+!! transparency
+urxvt*transparent: true
+urxvt*shading: 10
+
+
+!! Perl extensions
+urxvt.perl-ext-common: default,matcher,font-size
+!! Open urls in browser with Control-Click
+urxvt.urlLauncher: /usr/bin/chromium-browser
+urxvt.matcher.button: C1
+!! Change font size on Control-Plus/Minus
+URxvt.keysym.Control-0x2b: perl:font-size:increase
+URxvt.keysym.Control-0x2d: perl:font-size:decrease
+

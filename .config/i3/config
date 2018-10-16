@@ -11,18 +11,18 @@
 # YouTube: https://youtube.com/c/LukeSmithxyz
 # Github: https://github.com/LukeSmithxyz
 
-# This config file will use environmental variables such as $BROWSER and $TERMINAL.
+# This config file will use environmental variables such as $BROWSER and urxvt.
 # You can set these variables in ~/.profile or ~/.bash_profile if you have it as below:
 #
 # export BROWSER="chromium-brow7ser"
-# export TERMINAL="gnome-terminal"
+# export TERMINAL="urxvt"
 
 # #---Basic Definitions---# #
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 1
 gaps inner 0
 gaps outer 0
-set $term --no-startup-id $TERMINAL
+set $term --no-startup-id urxvt
 set $mod Mod4
 set $stoprec --no-startup-id dmenurecord kill
 set $shutdown sudo -A shutdown -h now
@@ -94,7 +94,7 @@ bar {
 }
 
 # #---Basic Bindings---# #
-bindsym $mod+Return 		exec gnome-terminal
+bindsym $mod+Return 		exec urxvt
 bindsym $mod+Shift+Return	exec --no-startup-id samedir
 
 bindsym $mod+Shift+space 	floating toggle
@@ -110,7 +110,7 @@ bindsym $mod+Shift+BackSpace	exec --no-startup-id prompt "Are you sure you want 
 ##bindsym $mod+asciitilde
 
 #STOP/HIDE EVERYTHING:
-bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec $truepause ; exec --no-startup-id pauseallmpv; workspace 0; exec gnome-terminal -e htop ; exec gnome-terminal -e ranger
+bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec $truepause ; exec --no-startup-id pauseallmpv; workspace 0; exec urxvt -e htop ; exec gnome-terminal -e ranger
 
 # #---Letter Key Bindings---# #
 bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
@@ -119,22 +119,22 @@ bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown).*$"] ki
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
 
-bindsym $mod+e			exec gnome-terminal -e neomutt
+bindsym $mod+e			exec urxvt -e neomutt
 bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
 
-bindsym $mod+r 			exec gnome-terminal -e ranger
-bindsym $mod+Shift+r		exec gnome-terminal -e sudo ranger /
+bindsym $mod+r 			exec urxvt -e ranger
+bindsym $mod+Shift+r		exec urxvt -e sudo ranger /
 
 bindsym $mod+t			split toggle
 bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15
 
-bindsym $mod+y			exec gnome-terminal -e calcurse
+bindsym $mod+y			exec urxvt -e calcurse
 bindsym $mod+Shift+y		exec --no-startup-id "bash ~/.scripts/i3resize left"
 
 bindsym $mod+u			[instance="dropdown"] scratchpad show; [instance="dropdown"] move position center
 bindsym $mod+Shift+u		exec --no-startup-id "bash ~/.scripts/i3resize down"
 
-bindsym $mod+i 			exec gnome-terminal -e htop
+bindsym $mod+i 			exec urxvt -e htop
 bindsym $mod+Shift+i		exec --no-startup-id "bash ~/.scripts/i3resize up"
 
 bindsym $mod+o			sticky toggle
@@ -144,7 +144,7 @@ bindsym $mod+p			exec --no-startup-id lmc toggle
 bindsym $mod+Shift+p		exec --no-startup-id lmc pause
 
 bindsym $mod+a			[instance="math"] scratchpad show; [instance="math"] move position center
-bindsym $mod+Shift+a		exec gnome-terminal -e pulsemixer
+bindsym $mod+Shift+a		exec urxvt -e pulsemixer
 
 bindsym $mod+s			gaps inner current plus 5
 bindsym $mod+Shift+s		gaps inner current minus 5
@@ -183,7 +183,7 @@ bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shut
 bindsym $mod+c			exec --no-startup-id camtoggle
 ##bindsym $mod+Shift+c
 
-bindsym $mod+v			exec gnome-terminal -e ncmpcpp -s visualizer
+bindsym $mod+v			exec urxvt -e ncmpcpp -s visualizer
 bindsym $mod+Shift+v		exec --no-startup-id projectM-pulseaudio
 
 bindsym $mod+b			bar mode toggle
@@ -192,7 +192,7 @@ bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id botto
 bindsym $mod+n			exec "rofi -combi-modi window,drun -show combi -modi combi"
 ##bindsym $mod+Shift+n
 
-bindsym $mod+m 			exec --no-startup-id gnome-terminal -e ncmpcpp
+bindsym $mod+m 			exec --no-startup-id urxvt -e ncmpcpp
 bindsym $mod+Shift+m		exec --no-startup-id lmc mute
 
 # #---Workspace Bindings---# #
@@ -210,8 +210,8 @@ bindsym $mod+Tab		workspace back_and_forth
 bindsym $mod+XF86Back		workspace prev
 bindsym $mod+XF86Forward	workspace next
 bindsym $mod+semicolon		workspace next
-# bindsym $mod+apostrophe		split horizontal ;; exec gnome-terminal
-# bindsym $mod+slash		split vertical ;; exec gnome-terminal
+# bindsym $mod+apostrophe		split horizontal ;; exec urxvt
+# bindsym $mod+slash		split vertical ;; exec urxvt
 bindsym $mod+Shift+slash	kill
 bindsym $mod+backslash		workspace back_and_forth
 
@@ -272,7 +272,7 @@ for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 3
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
 # otherwise starts a new one (to prevent multiple dropdown sessions).
-exec --no-startup-id gnome-terminal -n dropdown -e tmuxinit
+exec --no-startup-id urxvt -n dropdown -e tmuxinit
 
 # Then I have a window running R I use for basic arithmetic
 # I'll later bind this to mod+a.
@@ -280,7 +280,7 @@ for_window [instance="math"] floating enable
 for_window [instance="math"] resize set 800 300
 for_window [instance="math"] move scratchpad
 for_window [instance="math"] border pixel 2
-exec --no-startup-id gnome-terminal -n math -f mono:pixelsize=24 -e dropdowncalc
+exec --no-startup-id urxvt -n math -f mono:pixelsize=24 -e dropdowncalc
 
 # Bindings to make the webcam float and stick.
 for_window [title="mpvfloat"] floating enable
@@ -294,13 +294,13 @@ bindsym $mod+F2		restart
 bindsym $mod+F3		exec --no-startup-id displayselect
 #bindsym $mod+F4		exec --no-startup-id $hibernate
 bindsym $mod+F5		exec --no-startup-id $netrefresh
-bindsym $mod+F6		exec --no-startup-id gnome-terminal -e transmission-remote-cli
+bindsym $mod+F6		exec --no-startup-id urxvt -e transmission-remote-cli
 bindsym $mod+F7		exec --no-startup-id td-toggle
 bindsym $mod+F8		exec --no-startup-id ~/.config/mutt/etc/mailsync.sh
 bindsym $mod+F9		exec --no-startup-id dmenumount
 bindsym $mod+F10	exec --no-startup-id dmenuumount
 bindsym $mod+F11	exec --no-startup-id dmenuarchwiki
-bindsym $mod+F12	exec gnome-terminal -e sudo -A wifi-menu
+bindsym $mod+F12	exec urxvt -e sudo -A wifi-menu
 
 # #---Arrow Keys---# #
 #bindsym $mod+Left		focus left
@@ -353,10 +353,10 @@ bindsym XF86PowerOff		exec --no-startup-id prompt "Are you sure you want to shut
 ##bindsym XF86Paste		exec
 ##bindsym XF86Cut		exec
 ##bindsym XF86MenuKB		exec
-bindsym XF86Calculator		exec gnome-terminal -e R -q
+bindsym XF86Calculator		exec urxvt -e R -q
 ##bindsym XF86Sleep		This binding is typically mapped by systemd automatically.
 ##bindsym XF86WakeUp		exec
-bindsym XF86Explorer		exec gnome-terminal -e ranger
+bindsym XF86Explorer		exec urxvt -e ranger
 ##bindsym XF86Send		exec
 ##bindsym XF86Xfer		exec
 bindsym XF86WWW			exec --no-startup-id $BROWSER
@@ -365,7 +365,7 @@ bindsym XF86ScreenSaver		exec exec --no-startup-id lockscreen
 ##bindsym XF86RotateWindows	exec
 ##bindsym XF86TaskPane		exec
 ##bindsym XF86Favorites		exec
-bindsym XF86MyComputer		exec gnome-terminal -e ranger
+bindsym XF86MyComputer		exec urxvt -e ranger
 ##bindsym XF86Back		exec
 ##bindsym XF86Forward		exec
 bindsym XF86Eject		exec --no-startup-id dmenuumount
@@ -400,8 +400,8 @@ bindsym XF86TouchpadOff		exec --no-startup-id synclient TouchpadOff=1
 bindsym XF86Suspend		exec --no-startup-id lockscreen
 bindsym XF86Close		kill
 bindsym XF86WebCam		exec --no-startup-id camtoggle
-bindsym XF86Mail		exec gnome-terminal -e neomutt
-bindsym XF86Messenger		exec gnome-terminal -e weechat
+bindsym XF86Mail		exec urxvt -e neomutt
+bindsym XF86Messenger		exec urxvt -e weechat
 bindsym XF86Search		exec $BROWSER https://duckduckgo.com
 ##bindsym XF86Go			exec
 ##bindsym XF86Finance		exec
@@ -409,7 +409,7 @@ bindsym XF86Search		exec $BROWSER https://duckduckgo.com
 bindsym XF86Shop		exec $BROWSER https://ebay.com
 bindsym XF86MonBrightnessDown	exec --no-startup-id brightnessctl set 10%-
 bindsym XF86MonBrightnessUp	exec --no-startup-id brightnessctl set 10%+
-bindsym XF86AudioMedia		exec --no-startup-id gnome-terminal -e ncmpcpp
+bindsym XF86AudioMedia		exec --no-startup-id urxvt -e ncmpcpp
 bindsym XF86Display		exec --no-startup-id arandr
 #bindsym XF86KbdLightOnOff	exec
 bindsym XF86KbdBrightnessDown	exec --no-startup-id python3.6 ~/.scripts/kb-lights.py -
@@ -417,14 +417,14 @@ bindsym XF86KbdBrightnessUp	exec --no-startup-id python3.6 ~/.scripts/kb-lights.
 ##bindsym XF86Reply		exec
 ##bindsym XF86MailForward	exec
 ##bindsym XF86Save		exec
-bindsym XF86Documents		exec gnome-terminal -e ranger ~/Documents
+bindsym XF86Documents		exec urxvt -e ranger ~/Documents
 ##bindsym XF86Battery		exec
 ##bindsym XF86Bluetooth		exec
 bindsym XF86WLAN		exec $netrefresh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3lock -i ~/Pictures/wallpapers/light_darkness_room_74473_1920x1080.png, mode "default"
+    bindsym l exec --no-startup-id i3lock -i ~/Pictures/grub_wallpapers/light_darkness_room_74473_1920x1080.png, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
     bindsym s exec --no-startup-id systemctl suspend, mode "default"
     bindsym h exec --no-startup-id systemctl hibernate, mode "default"

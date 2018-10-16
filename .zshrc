@@ -116,4 +116,5 @@ fi
 wal -R > /dev/null
 export EDITOR='vi'
 export BROWSER="chromium-browser"
-export TERMINAL="gnome-terminal"
+export TERMINAL="rxvt"
+export TERM="rxvt"
