@@ -11,6 +11,9 @@
 .atom/
 .bash_history
 .bash_logout
+.bumblebee-status
+.links2
+.w3m
 .bashrc.save
 .cache/
 .cinnamon/
