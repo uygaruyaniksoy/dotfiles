@@ -9,6 +9,9 @@ cd .steam/
 open_with ./
 pwd
 
-open_with 
 bulkrenz
 delete
+touch jjjjjjjj
+open_with 
+rename grub_wallpapers
+rename wallpapers

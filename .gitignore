@@ -20,6 +20,7 @@
 .config/Unity/
 .config/chromium/
 .config/configstore/
+.config/spotify/
 .config/syncthing/
 .config/tomboy/
 .config/unity3d/
@@ -57,6 +58,7 @@
 .node_repl_history
 .npm/
 .nv/
+.oh-my-zsh/
 .pki/
 .pulse-cookie
 .python_history

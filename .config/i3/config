@@ -369,9 +369,9 @@ bindsym XF86MyComputer		exec gnome-terminal -e ranger
 ##bindsym XF86Back		exec
 ##bindsym XF86Forward		exec
 bindsym XF86Eject		exec --no-startup-id dmenuumount
-bindsym XF86AudioNext		exec --no-startup-id lmc next
-bindsym XF86AudioPlay		exec --no-startup-id lmc toggle
-bindsym XF86AudioPrev		exec --no-startup-id lmc prev
+bindsym XF86AudioNext		exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next 
+bindsym XF86AudioPlay		exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym XF86AudioPrev		exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous 
 bindsym XF86AudioStop		exec --no-startup-id lmc toggle
 ##bindsym XF86AudioRecord
 bindsym XF86AudioRewind		exec --no-startup-id lmc back 10
@@ -394,7 +394,7 @@ bindsym XF86Reload		restart
 ##bindsym XF86Launch8		exec
 ##bindsym XF86Launch9		exec
 #bindsym XF86AudioMicMute	exec $micmute
-bindsym XF86TouchpadToggle exec ~/.touchpad_toggle.sh
+bindsym XF86TouchpadToggle exec ~/.scripts/touchpad_toggle.sh
 bindsym XF86TouchpadOn		exec --no-startup-id synclient TouchpadOff=0
 bindsym XF86TouchpadOff		exec --no-startup-id synclient TouchpadOff=1
 bindsym XF86Suspend		exec --no-startup-id lockscreen
