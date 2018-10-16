@@ -87,7 +87,7 @@ bar {
 			focused_workspace  #aa0000 #aa0000 $darkblack
 			inactive_workspace $darkblack $darkblack $white
 		}
-	status_command /home/uygar/.bumblebee-status/bumblebee-status -d -m title amixer battery datetime -t iceberg
+	status_command /home/uygar/.bumblebee-status/bumblebee-status -d -m title spacer gcalcli amixer battery datetime -t iceberg
 	position top
 	mode dock
 	modifier None

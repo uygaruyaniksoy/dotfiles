@@ -25,6 +25,7 @@
 .config/configstore/
 .config/spotify/
 .config/syncthing/
+.config/pulse/
 .config/tomboy/
 .config/unity3d/
 .config/user-dirs.dirs
