@@ -36,7 +36,7 @@ exec --no-startup-id wal -i ~/.config/wall.png >/dev/null
 # Starts dunst for notifications:
 exec --no-startup-id dunst
 # Composite manager:
-exec --no-startup-id compton
+exec --no-startup-id  compton
 # Runs the key remapping scripts
 exec --no-startup-id ~/.scripts/remaps
 # Unclutter makes the mouse invisible after a brief period
@@ -189,7 +189,7 @@ bindsym $mod+Shift+v		exec --no-startup-id projectM-pulseaudio
 bindsym $mod+b			bar mode toggle
 bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id bottomleft
 
-bindsym $mod+n			exec "rofi -combi-modi window,drun -show combi -modi combi"
+bindsym $mod+n			exec "rofi -combi-modi window,drun -show combi -modi combi -theme Pop-Dark"
 ##bindsym $mod+Shift+n
 
 bindsym $mod+m 			exec --no-startup-id urxvt -e ncmpcpp
@@ -291,7 +291,7 @@ no_focus [title="mpvfloat"]
 # #---Function Buttons---# #
 bindsym $mod+F1		exec --no-startup-id zathura ~/.config/i3/i3_guide.pdf
 bindsym $mod+F2		restart
-bindsym $mod+F3		exec --no-startup-id displayselect
+bindsym $mod+F3	    exec --no-startup-id  compton
 #bindsym $mod+F4		exec --no-startup-id $hibernate
 bindsym $mod+F5		exec --no-startup-id $netrefresh
 bindsym $mod+F6		exec --no-startup-id urxvt -e transmission-remote-cli
@@ -438,8 +438,3 @@ mode "$mode_system" {
 bindsym $mod+F4 mode "$mode_system"
 
 bindsym $mod+Shift+Escape exec ~/.config/i3/exit_menu.sh
-
-exec feh --bg-fill /home/uygar/Pictures/space/Omega_Nebula.jpg
-exec --no-startup-id nm-applet
-exec --no-startup-id compton 
-

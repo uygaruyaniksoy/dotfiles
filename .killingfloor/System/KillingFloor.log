@@ -1,0 +1,241 @@
+Log: Log file open, Thu Oct 18 21:10:26 2018
+Init: Name subsystem initialized
+Init: Version: 3339 (128.29)
+Init: RO_VERSION: 1094
+Init: KF_VERSION: 1065
+Init: Compiled: Apr 13 2016 06:47:34
+Init: Command line: 
+Init: (This is Linux patch version 3339.0)
+Init: Character set: Unicode
+Init: Base directory: /media/uygar/Steam/steamapps/common/KillingFloor/System/
+Init: Ini:KillingFloor.ini   UserIni:User.ini
+Init: Build label:  Build UT2004_Build_[2004-11-11_10.48]
+Init: Object subsystem initialized
+Log: Your ini had WinDrv...Forcing use of SDLDrv instead.
+Log: Your ini had D3DDrv...Forcing use of OpenGLDrv instead.
+Warning: Missing Class Class Editor.TransBuffer
+Log: Initializing OpenGLDrv...
+Log: binding OpenGL library...
+Log: Game class is 'KFCinematicGame'
+Log: Bringing Level Entry.myLevel up for play (0) appSeconds: 6.543393...
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: Browse: KFIntro.rom?Class=Engine.Pawn?Character=Corporal_Lewis?team=1?Sex=M?Name=
+Log: Collecting garbage
+Log: Purging garbage
+Log: Garbage: objects: 39559->39559; refs: 419402
+Log: Game class is 'KFCinematicGame'
+Log: Bringing Level KFIntro.myLevel up for play (0) appSeconds: 6.794177...
+ScriptLog: GameInfo::InitGame : bEnableStatLogging False
+Log: Created and initialized a new SDL viewport.
+Log: Exporting KF-Manor.....Successful!
+Log: Exporting KF-Foundry.....Successful!
+Log: Exporting KF-Forgotten.....Successful!
+Log: Exporting KF-ThrillsChills.....Successful!
+Log: Exporting KF-Hospitalhorrors.....Successful!
+Log: Exporting KF-Suburbia.....Successful!
+Log: Exporting KF-Bedlam.....Successful!
+Log: Exporting KF-Menu.....Successful!
+Log: Exporting KF-Hellride.....Successful!
+Log: Exporting KF-MountainPass.....Successful!
+Log: Exporting KF-Wyre.....Successful!
+Log: Exporting KF-SirensBelch.....Successful!
+Log: Exporting KF-FilthsCross.....Successful!
+Log: Exporting KF-Offices.....Successful!
+Log: Exporting KF-Farm.....Successful!
+Log: Exporting KF-EvilSantasLair.....Successful!
+Log: Exporting KFO-FrightYard.....Successful!
+Log: Exporting KF-Biohazard.....Successful!
+Log: Exporting KF-Stronghold.....Successful!
+Log: Exporting KF-Transit.....Successful!
+Log: Exporting KF-Aperture.....Successful!
+Log: Exporting KF-Hell.....Successful!
+Log: Exporting KF-IceCave.....Successful!
+Log: Exporting KF-Clandestine.....Successful!
+Log: Exporting KFO-Steamland.....Successful!
+Log: Exporting KF-MoonBase.....Successful!
+Log: Exporting KFO-Transit.....Successful!
+Log: Exporting KF-BioticsLab.....Successful!
+Log: Exporting KF-WestLondon.....Successful!
+Log: Exporting KF-FrightYard.....Successful!
+Log: Exporting KF-Icebreaker.....Successful!
+Log: Exporting KF-Departed.....Successful!
+Log: Exporting KF-AbusementPark.....Successful!
+Log: Exporting KF-Waterworks.....Successful!
+Log: Exporting KF-Steamland.....Successful!
+Log: Exporting KF-HillbillyHorror.....Successful!
+Log: Exporting KF-Crash.....Successful!
+Log: ALAudio: Using ALC_EXT_capture to record audio.
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Log: STEAMSTATS: Stats Are Now Enabled
+ScriptLog: New Player  id=20b300195d48c2ccc2651885cfea1a2f
+Log: TTS: No output filename specified.
+Log: Enter SetRes: 800x600 Fullscreen 1
+Log: OpenGL
+Localization: No localization: KillingFloor.General.Product (int)
+Log: GL_VENDOR     : NVIDIA Corporation
+Log: GL_RENDERER   : GeForce GTX 950M/PCIe/SSE2
+Log: GL_VERSION    : 4.6.0 NVIDIA 390.48
+Log: OpenGL: Device supports: GL
+Log: OpenGL: Device supports: GL_EXT_bgra
+Log: OpenGL: Device supports: GL_ARB_texture_compression
+Log: OpenGL: Device supports: GL_EXT_texture_compression_s3tc
+Log: OpenGL: Device supports: GL_ARB_texture_cube_map
+Log: OpenGL: Device supports: GL_ARB_texture_env_combine
+Log: OpenGL: Device supports: GL_NV_texture_env_combine4
+Log: OpenGL: Device supports: GL_ARB_texture_env_crossbar
+Log: OpenGL: Device supports: GL_EXT_texture_lod_bias
+Log: OpenGL: Device supports: GL_ARB_multitexture
+Log: OpenGL: Device supports: GL_NV_vertex_array_range
+Log: OpenGL: Device supports: GL_NV_vertex_array_range2
+Log: OpenGL: Device supports: GL_ARB_multisample
+Log: OpenGL: Device supports: GL_NV_multisample_filter_hint
+Log: OpenGL: Device supports: GL_EXT_texture_filter_anisotropic
+Log: OpenGL: Device supports: GL_ARB_vertex_buffer_object
+Log: OpenGL: Device supports: GL_EXT_framebuffer_object
+Log: OpenGL: Device supports: GL_ARB_texture_non_power_of_two
+Log: OpenGL: Device supports: GL_EXT_stencil_wrap
+Log: OpenGL: Device supports: GL_EXT_framebuffer_blit
+Log: OpenGL: Device supports: GL_ARB_texture_float
+Log: OpenGL: Device supports: GL_ATI_texture_float
+Log: OpenGL: C32 RGB888 Z24 S0
+Log: OpenGL: Level of anisotropy is 1.000000 (max 16.000000).
+Log: OpenGL: Have 0 multisamples buffers, 0 samples.
+Log: OpenGL: Failed to get a multisample GL context
+Log: OpenGL: Using GL_EXT_framebuffer_object for render-to-texture.
+Log: OpenGL: Forcibly disabled stencil operations.
+Log: OpenGL: calling Trip_PostFXOpenGL::Init() ...
+Log: Trip_PostFXOpenGL: Init started
+Log: Trip_PostFXOpenGL: Initializing MojoShader...
+Log: Trip_PostFXOpenGL: Compiled against MojoShader changeset hg-1109:51292bd4476b
+Log: Trip_PostFXOpenGL: Linked against MojoShader changeset hg-1109:51292bd4476b
+Log: Trip_PostFXOpenGL: MojoShader thinks the best profile for this system is 'glsl120'
+Log: Trip_PostFXOpenGL: Trying MojoShader profile 'glsl120'
+Log: Trip_PostFXOpenGL: Using MojoShader profile 'glsl120'
+Log: Trip_PostFXOpenGL: Building render targets...
+Log: Trip_PostFXOpenGL: Bloom is unsupported.
+Log: Trip_PostFXOpenGL: Compiling GPU shaders...
+Log: Trip_PostFXOpenGL: Linking GPU programs...
+Log: Trip_PostFXOpenGL: Unreferencing GPU shaders...
+Log: Trip_PostFXOpenGL: Setting default uniforms...
+Log: Trip_PostFXOpenGL: Building material states...
+Log: Trip_PostFXOpenGL: Building vertex streams...
+Log: Trip_PostFXOpenGL: Init finished successfully.
+Log: Trip_PostFXOpenGL: BloomCap = false
+Log: Trip_PostFXOpenGL: GPUCalcAvgLum = true
+Log: Trip_PostFXOpenGL: DownSample_Cap = false
+Log: Trip_PostFXOpenGL: SLISupportActive = false
+Log: Trip_PostFXOpenGL: SLIOnFrame = true
+Log: OpenGL: Trip_PostFXOpenGL::Init() successful!
+Log: Startup time: 18.480062 seconds
+Log: Precaching: KFIntro.LevelInfo0
+Log: Static mesh batches: 0 vertex bytes, 0 index bytes
+Log: Allocating dynamic index buffer.
+Log: Allocating dynamic vertex buffer.
+Log: Finished precaching geometry in 0.002 seconds
+Log: Finished precaching textures in 0.002 seconds
+Log: Unsupported SDL key id (0x137)
+Log: URL: Adding default option Class=Engine.Pawn
+Log: URL: Adding default option Character=Corporal_Lewis
+Log: URL: Adding default option team=1
+Log: URL: Adding default option Name=
+Log: Browse: Index.rom?disconnect?Class=Engine.Pawn?Character=Corporal_Lewis?team=1?Name=
+Log: Failed; returning to Entry
+Log: GP=FALSE
+Log: Spawning new actor for Viewport SDLViewport
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+ScriptLog: New Player  id=20b300195d48c2ccc2651885cfea1a2f
+Log: Static mesh batches: 0 vertex bytes, 0 index bytes
+Log: Unsupported SDL key id (0x137)
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.': Can't resolve package name
+Error: KFTab_DetailSettings Package.KFTab_DetailSettings (Function GUI2K4.UT2K4Tab_DetailSettings.InternalOnLoadINI:0983) Accessed array 'MultiSampleQualityModes' out of bounds (-1/0)
+Localization: No localization: XInterface.UT2DeferChangeRes.DialogText.Caption (int)
+Localization: No localization: XInterface.UT2DeferChangeRes.DialogText2.Caption (int)
+Log: Enter SetRes: 1920x1080 Fullscreen 1
+Log: OpenGL: deleting Trip_PostFXOpenGL...
+Log: Trip_PostFXOpenGL: CleanUp.
+Log: OpenGL
+Localization: No localization: KillingFloor.General.Product (int)
+Log: GL_VENDOR     : NVIDIA Corporation
+Log: GL_RENDERER   : GeForce GTX 950M/PCIe/SSE2
+Log: GL_VERSION    : 4.6.0 NVIDIA 390.48
+Log: OpenGL: Device supports: GL
+Log: OpenGL: Device supports: GL_EXT_bgra
+Log: OpenGL: Device supports: GL_ARB_texture_compression
+Log: OpenGL: Device supports: GL_EXT_texture_compression_s3tc
+Log: OpenGL: Device supports: GL_ARB_texture_cube_map
+Log: OpenGL: Device supports: GL_ARB_texture_env_combine
+Log: OpenGL: Device supports: GL_NV_texture_env_combine4
+Log: OpenGL: Device supports: GL_ARB_texture_env_crossbar
+Log: OpenGL: Device supports: GL_EXT_texture_lod_bias
+Log: OpenGL: Device supports: GL_ARB_multitexture
+Log: OpenGL: Device supports: GL_NV_vertex_array_range
+Log: OpenGL: Device supports: GL_NV_vertex_array_range2
+Log: OpenGL: Device supports: GL_ARB_multisample
+Log: OpenGL: Device supports: GL_NV_multisample_filter_hint
+Log: OpenGL: Device supports: GL_EXT_texture_filter_anisotropic
+Log: OpenGL: Device supports: GL_ARB_vertex_buffer_object
+Log: OpenGL: Device supports: GL_EXT_framebuffer_object
+Log: OpenGL: Device supports: GL_ARB_texture_non_power_of_two
+Log: OpenGL: Device supports: GL_EXT_stencil_wrap
+Log: OpenGL: Device supports: GL_EXT_framebuffer_blit
+Log: OpenGL: Device supports: GL_ARB_texture_float
+Log: OpenGL: Device supports: GL_ATI_texture_float
+Log: OpenGL: C32 RGB888 Z24 S0
+Log: OpenGL: Level of anisotropy is 8.000000 (max 16.000000).
+Log: OpenGL: Have 0 multisamples buffers, 0 samples.
+Log: OpenGL: Failed to get a multisample GL context
+Log: OpenGL: Using GL_EXT_framebuffer_object for render-to-texture.
+Log: OpenGL: Forcibly disabled stencil operations.
+Log: OpenGL: calling Trip_PostFXOpenGL::Init() ...
+Log: Trip_PostFXOpenGL: Init started
+Log: Trip_PostFXOpenGL: Initializing MojoShader...
+Log: Trip_PostFXOpenGL: Compiled against MojoShader changeset hg-1109:51292bd4476b
+Log: Trip_PostFXOpenGL: Linked against MojoShader changeset hg-1109:51292bd4476b
+Log: Trip_PostFXOpenGL: MojoShader thinks the best profile for this system is 'glsl120'
+Log: Trip_PostFXOpenGL: Trying MojoShader profile 'glsl120'
+Log: Trip_PostFXOpenGL: Using MojoShader profile 'glsl120'
+Log: Trip_PostFXOpenGL: Building render targets...
+Log: Trip_PostFXOpenGL: Bloom is unsupported.
+Log: Trip_PostFXOpenGL: Compiling GPU shaders...
+Log: Trip_PostFXOpenGL: Linking GPU programs...
+Log: Trip_PostFXOpenGL: Unreferencing GPU shaders...
+Log: Trip_PostFXOpenGL: Setting default uniforms...
+Log: Trip_PostFXOpenGL: Building material states...
+Log: Trip_PostFXOpenGL: Building vertex streams...
+Log: Trip_PostFXOpenGL: Init finished successfully.
+Log: Trip_PostFXOpenGL: BloomCap = false
+Log: Trip_PostFXOpenGL: GPUCalcAvgLum = true
+Log: Trip_PostFXOpenGL: DownSample_Cap = false
+Log: Trip_PostFXOpenGL: SLISupportActive = false
+Log: Trip_PostFXOpenGL: SLIOnFrame = true
+Log: OpenGL: Trip_PostFXOpenGL::Init() successful!
+Log: Precaching: Entry.LevelInfo0
+Log: Allocating dynamic vertex buffer.
+Log: Finished precaching geometry in 0.004 seconds
+Log: Finished precaching textures in 0.005 seconds
+Log: Unsupported SDL key id (0x137)
+Log: Unsupported SDL key id (0x137)
+Log: Unsupported SDL key id (0x137)
+Log: Unsupported SDL key id (0x137)
+Log: Unsupported SDL key id (0x137)
+Log: Enter SetRes: 1920x1080 Fullscreen 1. Already at that resolution, returning.
+Error: KFTab_DetailSettings Package.KFTab_DetailSettings (Function GUI2K4.UT2K4Tab_DetailSettings.InternalOnLoadINI:0983) Accessed array 'MultiSampleQualityModes' out of bounds (-1/0)
+ScriptLog: class'PlayerInput'.default.MouseSmoothingMode = 1
+ScriptLog: bSmoothing = True
+ScriptLog: byte(bSmoothing) = 1
+ScriptLog: int(bSmoothing) = 1
+Log: Precaching: Entry.LevelInfo0
+Log: Allocating dynamic index buffer.
+Log: Allocating dynamic vertex buffer.
+Log: Finished precaching geometry in 0.001 seconds
+Log: Finished precaching textures in 0.003 seconds
+Log: appRequestExit(0)
+Localization: No localization: KillingFloor.General.Exit (int)
+Exit: Preparing to exit.

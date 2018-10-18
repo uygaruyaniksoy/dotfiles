@@ -6,3 +6,4 @@
 # export TERMINAL="gnome-terminal"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
