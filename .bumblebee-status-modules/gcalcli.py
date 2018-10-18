@@ -22,7 +22,7 @@ class Module(bumblebee.engine.Module):
             bumblebee.output.Widget(full_text=self.next_entry))
 
     def next_entry(self, widget):
-        p = subprocess.Popen("gcalcli agenda --tsv | head -1 | awk '{ printf \"%s %s\", $5, $1 }' ", stdout=subprocess.PIPE, shell=True)
+        p = subprocess.Popen("gcalcli agenda --tsv | head -1 | awk  '{out=\"\"; for(i=5;i<=NF;i++){out=out\" \"$i}; printf \"%s %s\", out, $1}'", stdout=subprocess.PIPE, shell=True)
         (output, err) = p.communicate()
         return output
 
