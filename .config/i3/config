@@ -116,6 +116,8 @@ bindsym $mod+Shift+Delete	exec --no-startup-id lmc truemute ; exec $truepause ; 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
 bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
 
+#bindsym $mod+Shift+c		[con_id="__focused__" instance="^(?!math|dropdown).*$"] resize grow  width 10 px or 10 ppt; resize grow  height 10 px or 10 ppt
+
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
 
@@ -162,16 +164,16 @@ bindsym $mod+Shift+f		mode "$freeze"
 bindsym $mod+g			workspace prev
 bindsym $mod+Shift+g		exec --no-startup-id gimp; workspace $ws5
 
-bindsym $mod+h			focus left
+bindsym $mod+h			resize shrink width 10 px or 10 ppt; focus left; resize grow width 10 px or 10 ppt
 bindsym $mod+Shift+h		move left 30
 
-bindsym $mod+j			focus down
+bindsym $mod+j			resize shrink height 10 px or 10 ppt; focus down; resize grow height 10 px or 10 ppt
 bindsym $mod+Shift+j		move down 30
 
-bindsym $mod+k			focus up
+bindsym $mod+k			resize shrink height 10 px or 10 ppt; focus up; resize grow height 10 px or 10 ppt
 bindsym $mod+Shift+k		move up 30
 
-bindsym $mod+l			focus right
+bindsym $mod+l			resize shrink width 10 px or 10 ppt; focus right; resize grow width 10 px or 10 ppt
 bindsym $mod+Shift+l		move right 30
 
 bindsym $mod+z			gaps outer current plus 5
