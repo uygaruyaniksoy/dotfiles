@@ -183,7 +183,7 @@ bindsym $mod+Shift+z		gaps outer current minus 5
 bindsym $mod+x			exec --no-startup-id lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
-bindsym $mod+c			exec --no-startup-id camtoggle
+bindsym $mod+c			exec urxvt -hold -e echo "title: " && read -r input && echo "when: " && read -r inputt && gcalcli add --duration 60 --title "$(echo $input | sed -r 's/(.*)/\1/')" --when "$(echo $inputt | sed -r  's/(.*)/\1/')" 
 ##bindsym $mod+Shift+c
 
 bindsym $mod+v			exec urxvt -e ncmpcpp -s visualizer
