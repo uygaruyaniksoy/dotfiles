@@ -276,10 +276,9 @@ for_window [instance="dropdown"] border pixel 3
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
 # otherwise starts a new one (to prevent multiple dropdown sessions).
 
-for_window [class="floating"] floating enable
-for_window [class="floating"] resize set 625 400
-for_window [class="floating"] move scratchpad
-for_window [class="floating"] border pixel 3
+for_window [title="^gcaladd.sh$"] floating enable
+for_window [title="^gcaladd.sh$"] resize set 625 400
+for_window [title="^gcaladd.sh$"] border pixel 3
 
 
 exec --no-startup-id urxvt -n dropdown -e tmuxinit
