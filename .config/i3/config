@@ -29,7 +29,7 @@ set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
-no_focus [class="^.*"]
+no_focus [class="^(urxvt).*$"]
 
 # #---Starting External Scripts---# #
 # Setting the background and colorscheme:
@@ -183,7 +183,7 @@ bindsym $mod+Shift+z		gaps outer current minus 5
 bindsym $mod+x			exec --no-startup-id lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
-bindsym $mod+c			exec urxvt -hold -e echo "title: " && read -r input && echo "when: " && read -r inputt && gcalcli add --duration 60 --title "$(echo $input | sed -r 's/(.*)/\1/')" --when "$(echo $inputt | sed -r  's/(.*)/\1/')" 
+bindsym $mod+c			exec urxvt -e ~/.scripts/gcaladd.sh && exit
 ##bindsym $mod+Shift+c
 
 bindsym $mod+v			exec urxvt -e ncmpcpp -s visualizer
@@ -275,6 +275,13 @@ for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] border pixel 3
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
 # otherwise starts a new one (to prevent multiple dropdown sessions).
+
+for_window [class="floating"] floating enable
+for_window [class="floating"] resize set 625 400
+for_window [class="floating"] move scratchpad
+for_window [class="floating"] border pixel 3
+
+
 exec --no-startup-id urxvt -n dropdown -e tmuxinit
 
 # Then I have a window running R I use for basic arithmetic
