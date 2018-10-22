@@ -20,7 +20,7 @@
 # #---Basic Definitions---# #
 # Needed for i3-gaps
 for_window [class="^.*"] border pixel 0
-gaps inner 0
+gaps inner 10
 gaps outer 0
 set $term --no-startup-id urxvt
 set $mod Mod4
@@ -29,7 +29,8 @@ set $shutdown sudo -A shutdown -h now
 set $reboot sudo -A reboot
 set $netrefresh --no-startup-id sudo -A systemctl restart NetworkManager
 set $hibernate sudo -A systemctl suspend
-no_focus [class="^(urxvt).*$"]
+# no_focus [class="^URxvt$"] I give up on this TODO: only urxvt should focus
+no_focus [class="^Zathura$"] 
 
 # #---Starting External Scripts---# #
 # Setting the background and colorscheme:
@@ -295,7 +296,6 @@ exec --no-startup-id urxvt -n math -f mono:pixelsize=24 -e dropdowncalc
 for_window [title="mpvfloat"] floating enable
 for_window [title="mpvfloat"] sticky enable
 for_window [title="mpvfloat"] border pixel 0
-no_focus [title="mpvfloat"]
 
 # #---Function Buttons---# #
 bindsym $mod+F1		exec --no-startup-id zathura ~/.config/i3/i3_guide.pdf

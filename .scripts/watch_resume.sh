@@ -1,4 +1,8 @@
-while inotifywait -e modify ~/Documents/resume/resume.tex; do
-    killall zathura; pdflatex ~/Documents/resume/resume.tex > /dev/null; zathura ~/Documents/resume/resume.pdf &
-done
-
+cd ~/Documents/resume
+while inotifywait --exclude ".*(log|pdf)$" -e modify ~/Documents/resume/; do
+    trash ~/Documents/resume/resume.pdf;
+    killall zathura;
+    pdflatex ~/Documents/resume/resume.tex > /dev/null;
+    zathura ~/Documents/resume/resume.pdf &
+done &
+vi ~/Documents/resume/resume.tex
