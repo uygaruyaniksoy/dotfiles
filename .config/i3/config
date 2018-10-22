@@ -184,7 +184,7 @@ bindsym $mod+Shift+z		gaps outer current minus 5
 bindsym $mod+x			exec --no-startup-id lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
-bindsym $mod+c			exec urxvt -e ~/.scripts/gcaladd.sh && exit
+bindsym $mod+c			exec urxvt -e ~/.scripts/list_scripts.sh && exit
 ##bindsym $mod+Shift+c
 
 bindsym $mod+v			exec urxvt -e ncmpcpp -s visualizer
@@ -280,6 +280,11 @@ for_window [instance="dropdown"] border pixel 3
 for_window [title="^gcaladd.sh$"] floating enable
 for_window [title="^gcaladd.sh$"] resize set 625 400
 for_window [title="^gcaladd.sh$"] border pixel 3
+
+for_window [title="^list_scripts.sh$"] floating enable;
+for_window [title="^list_scripts.sh$"] resize set 1 1;
+for_window [title="^list_scripts.sh$"] move position 0 0 
+for_window [title="^list_scripts.sh$"] move to  workspace $ws10 
 
 
 exec --no-startup-id urxvt -n dropdown -e tmuxinit
