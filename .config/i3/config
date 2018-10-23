@@ -130,7 +130,7 @@ bindsym $mod+r 			exec urxvt -e ranger
 bindsym $mod+Shift+r		exec urxvt -e sudo ranger /
 
 bindsym $mod+t			split toggle
-bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15
+bindsym $mod+Shift+t		exec urxvt -e tmux attach
 
 bindsym $mod+y			exec urxvt -e calcurse
 bindsym $mod+Shift+y		exec --no-startup-id "bash ~/.scripts/i3resize left"
@@ -258,11 +258,11 @@ for_window [class="Pinentry"] sticky enable
 for_window [class="sent"] border pixel 0px
 for_window [class="Chromium"] move to workspace $ws2
 for_window [title="Steam"] move to workspace $ws3
-for_window [title="Unity"] move to workspace $ws4
+for_window [title="^Unity"] move to workspace $ws4
 for_window [title="Rider"] move to workspace $ws5
 for_window [class="Blender"] move to workspace $ws6
 for_window [class="marble"] move to workspace $ws7
-for_window [title="Spotify"] move to workspace $ws8
+for_window [title="^Spotify$"] move to workspace $ws8
 for_window [title="GIMP Startup"] move workspace $ws5
 for_window [class="Gimp"] move workspace $ws5
 for_window [window_role="GtkFileChooserDialog"] resize shrink height 10 px
@@ -286,6 +286,9 @@ for_window [title="^.list_scripts.sh$"] resize set 1 1;
 for_window [title="^.list_scripts.sh$"] move position 0 0 
 for_window [title="^.list_scripts.sh$"] move to  workspace $ws10 
 
+for_window [title="Music/sconsify/sconsify$"] floating enable;
+for_window [title="Music/sconsify/sconsify$"] resize set 720 480;
+for_window [title="Music/sconsify/sconsify$"] move position center 
 
 exec --no-startup-id urxvt -n dropdown -e tmuxinit
 

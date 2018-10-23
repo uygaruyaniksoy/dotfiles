@@ -34,7 +34,6 @@ alias editbash="nbash && sbash"
 alias ebash="editbash"
 alias ezsh="$EDITOR ~/.zshrc && source ~/.zshrc"
 alias rider="/home/uygar/.JetBrains\ Rider-2018.2.3/bin/rider.sh"
-ss () { urxvt -hold -c ~/.scripts/"$( ls ~/.scripts/ | dmenu )" }
 alias tor="/home/uygar/.tor-browser_en-US/Browser/start-tor-browser -allow-remote"
 alias gcalcli="gcalcli --calendar 'uygaruyaniksoy@gmail.com'"
 alias gcalw="gcalcli calw --military --monday "

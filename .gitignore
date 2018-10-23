@@ -55,6 +55,7 @@
 .pulse-cookie
 .python_history
 .rpmdb/
+.sconsify/cache/
 .ssh/
 .steam/
 .steampath
