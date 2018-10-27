@@ -22,7 +22,7 @@ alias idea='/usr/local/idea-IU-181.4892.42/bin/idea.sh'
 
 alias ytdlm='youtube-dl -q -x --audio-format mp3'
 alias play="mpg321 -v -x --gain 20 -Z"
-alias music='reptyr $(pgrep music-player.sh)'
+alias music='~/Music/sconsify/sconsify -username uygunkullanıcı '
 alias clion='~/.clion-2018.2.2/bin/clion.sh'
 
 alias ms='~/Project/music-player/index.sh'
