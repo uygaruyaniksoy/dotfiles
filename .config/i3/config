@@ -39,6 +39,8 @@ exec --no-startup-id wal -i ~/.config/wall.png >/dev/null
 exec --no-startup-id dunst
 # Composite manager:
 exec --no-startup-id  compton
+exec --no-startup-id  redshift
+exec --no-startup-id  steam
 # Runs the key remapping scripts
 exec --no-startup-id ~/.scripts/remaps
 # Unclutter makes the mouse invisible after a brief period
@@ -181,7 +183,7 @@ bindsym $mod+Shift+l		move right 30
 bindsym $mod+z			gaps outer current plus 5
 bindsym $mod+Shift+z		gaps outer current minus 5
 
-bindsym $mod+x			exec bash ~/.scripts/lockscreen.sh 
+bindsym $mod+x			exec bash ~/.scripts/fast_lockscreen.sh 
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
 bindsym $mod+c			exec urxvt -e ~/.scripts/.list_scripts.sh && exit
@@ -256,7 +258,7 @@ bindsym $mod+Shift+0	move container to workspace $ws10
 
 for_window [class="Pinentry"] sticky enable
 for_window [class="sent"] border pixel 0px
-for_window [title="Steam"] move to workspace $ws3
+for_window [title="^Steam$"] move to workspace $ws3
 for_window [title="^Unity - Unity"] move to workspace $ws4
 for_window [title="Rider"] move to workspace $ws5
 for_window [class="Blender"] move to workspace $ws6
@@ -442,9 +444,9 @@ bindsym XF86WLAN		exec $netrefresh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id scrot /tmp/screen.png && convert -paint 5 -median 5 /tmp/screen.png /tmp/screen.png &&  letterEnteredColor=d23c3dff && letterRemovedColor=d23c3dff && passwordCorrect=00000000 && passwordIncorrect=d23c3dff && background=00000000 && foreground=ffffffff && i3lock -i /tmp/screen.png --timepos="x+110:h-70" --datepos="x+43:h-45" --clock --date-align 1 --datestr "$locktext" --insidecolor=$background --ringcolor=$foreground --line-uses-inside --keyhlcolor=$letterEnteredColor --bshlcolor=$letterRemovedColor --separatorcolor=$background --insidevercolor=$passwordCorrect --insidewrongcolor=$passwordIncorrect --ringvercolor=$foreground --ringwrongcolor=$foreground --indpos="x+280:h-70" --radius=20 --ring-width=4 --veriftext="" --wrongtext="" --verifcolor="$foreground" --timecolor="$foreground" --datecolor="$foreground" --noinputtext="", mode "default"
+    bindsym l exec bash ~/.scripts/lockscreen.sh
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec --no-startup-id "i3lock -i ~/Pictures/grub_wallpapers/light_darkness_room_74473_1920x1080.png; systemctl suspend", mode "default"
+    bindsym s exec bash -c "~/.scripts/lockscreen.sh; systemctl suspend", mode "default"
     bindsym h exec --no-startup-id systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym p exec --no-startup-id systemctl poweroff, mode "default"
