@@ -114,6 +114,8 @@ if [ ! -n "$TMUX" ]; then
 fi
 
 wal -R > /dev/null
+
+export PATH=$PATH:$HOME/.scripts
 export EDITOR='vi'
 export BROWSER="chromium-browser"
 export TERMINAL="rxvt"

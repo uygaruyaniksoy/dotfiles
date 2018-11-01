@@ -183,7 +183,7 @@ bindsym $mod+Shift+l		move right 30
 bindsym $mod+z			gaps outer current plus 5
 bindsym $mod+Shift+z		gaps outer current minus 5
 
-bindsym $mod+x			exec bash ~/.scripts/fast_lockscreen.sh 
+bindsym $mod+x			exec bash ~/.scripts/fast_lockscreen
 bindsym $mod+Shift+x		exec --no-startup-id prompt "Are you sure you want to shutdown?" "$shutdown"
 
 bindsym $mod+c			exec urxvt -e ~/.scripts/.list_scripts.sh && exit
@@ -280,9 +280,9 @@ for_window [instance="dropdown"] border pixel 3
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
 # otherwise starts a new one (to prevent multiple dropdown sessions).
 
-for_window [title="^gcaladd.sh$"] floating enable
-for_window [title="^gcaladd.sh$"] resize set 625 400
-for_window [title="^gcaladd.sh$"] border pixel 3
+for_window [title="^gcaladd$"] floating enable
+for_window [title="^gcaladd$"] resize set 625 400
+for_window [title="^gcaladd$"] border pixel 3
 
 for_window [title="^.list_scripts.sh$"] floating enable;
 for_window [title="^.list_scripts.sh$"] resize set 1 1;
@@ -414,7 +414,7 @@ bindsym XF86Reload		restart
 ##bindsym XF86Launch8		exec
 ##bindsym XF86Launch9		exec
 #bindsym XF86AudioMicMute	exec $micmute
-bindsym XF86TouchpadToggle exec ~/.scripts/touchpad_toggle.sh
+bindsym XF86TouchpadToggle exec ~/.scripts/touchpad_toggle
 bindsym XF86TouchpadOn		exec --no-startup-id synclient TouchpadOff=0
 bindsym XF86TouchpadOff		exec --no-startup-id synclient TouchpadOff=1
 bindsym XF86Suspend		exec --no-startup-id lockscreen
@@ -444,9 +444,9 @@ bindsym XF86WLAN		exec $netrefresh
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
-    bindsym l exec bash ~/.scripts/lockscreen.sh
+    bindsym l exec bash ~/.scripts/lockscreen
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
-    bindsym s exec bash -c "~/.scripts/lockscreen.sh; systemctl suspend", mode "default"
+    bindsym s exec bash -c "~/.scripts/lockscreen && systemctl suspend", mode "default"
     bindsym h exec --no-startup-id systemctl hibernate, mode "default"
     bindsym r exec --no-startup-id systemctl reboot, mode "default"
     bindsym p exec --no-startup-id systemctl poweroff, mode "default"

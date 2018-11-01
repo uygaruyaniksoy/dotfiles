@@ -1,0 +1,7 @@
+while inotifywait --exclude ".*(log|pdf|aux|out)$" -e modify * > /dev/null 2>&1; do
+    pdflatex "$1.tex" > /dev/null 2>&1 
+    pgrep zathura > /dev/null 2>&1 || zathura "$1.pdf" & > /dev/null 2>&1
+done &
+vi "$1.tex"
+killall inotifywait
+exit
