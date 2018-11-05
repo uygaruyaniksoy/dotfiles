@@ -109,3 +109,4 @@ image/tiff=feh.desktop;
 image/x-icon=feh.desktop;
 image/x-xbitmap=feh.desktop;
 image/x-xpixmap=feh.desktop;
+application/vnd.android.package-archive=userapp-Bluetooth recipient-BLCFRZ.desktop;

@@ -1,0 +1,7 @@
+while inotifywait --exclude ".*(log|pdf|aux|out)$" -e modify * > /dev/null 2>&1; do
+    pandoc --from markdown -o "$1.pdf" "$1.md"
+    pgrep zathura > /dev/null 2>&1 || zathura "$1.pdf" & > /dev/null 2>&1
+done &
+vi "$1.md"
+killall inotifywait
+exit
