@@ -35,6 +35,7 @@ no_focus [class="^Zathura$"]
 # #---Starting External Scripts---# #
 # Setting the background and colorscheme:
 exec --no-startup-id wal -i ~/.config/wall.png >/dev/null
+exec --no-startup-id wal -R
 # Starts dunst for notifications:
 exec --no-startup-id dunst
 # Composite manager:
