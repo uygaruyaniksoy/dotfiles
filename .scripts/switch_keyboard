@@ -1,0 +1,2 @@
+echo "tr\ngb"  | dmenu | xargs setxkbmap
+

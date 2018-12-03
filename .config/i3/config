@@ -126,8 +126,8 @@ bindsym $mod+Shift+q		[con_id="__focused__" instance="^(?!math|dropdown).*$"] ki
 bindsym $mod+w			exec --no-startup-id $BROWSER
 bindsym $mod+Shift+w		exec --no-startup-id $BROWSER
 
-bindsym $mod+e			exec urxvt -e neomutt
-bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
+#bindsym $mod+e			exec urxvt -e neomutt
+#bindsym $mod+Shift+e		exec --no-startup-id tutorialvids
 
 bindsym $mod+r 			exec urxvt -e ranger
 bindsym $mod+Shift+r		exec urxvt -e sudo ranger /
@@ -169,16 +169,16 @@ bindsym $mod+Shift+f		mode "$freeze"
 bindsym $mod+g			workspace prev
 bindsym $mod+Shift+g		exec --no-startup-id gimp; workspace $ws5
 
-bindsym $mod+h			resize shrink width 10 px or 10 ppt; focus left; resize grow width 10 px or 10 ppt
+bindsym $mod+h			focus left; 
 bindsym $mod+Shift+h		move left 30
 
-bindsym $mod+j			resize shrink height 10 px or 10 ppt; focus down; resize grow height 10 px or 10 ppt
+bindsym $mod+j			focus down; 
 bindsym $mod+Shift+j		move down 30
 
-bindsym $mod+k			resize shrink height 10 px or 10 ppt; focus up; resize grow height 10 px or 10 ppt
+bindsym $mod+k			focus up; 
 bindsym $mod+Shift+k		move up 30
 
-bindsym $mod+l			resize shrink width 10 px or 10 ppt; focus right; resize grow width 10 px or 10 ppt
+bindsym $mod+l			focus right; 
 bindsym $mod+Shift+l		move right 30
 
 bindsym $mod+z			gaps outer current plus 5
@@ -197,9 +197,9 @@ bindsym $mod+b			bar mode toggle
 bindsym $mod+Shift+b		floating toggle; sticky toggle; exec --no-startup-id bottomleft
 
 bindsym $mod+n			exec "rofi -combi-modi window,drun -show combi -modi combi -theme Pop-Dark"
-##bindsym $mod+Shift+n
+bindsym $mod+Shift+n    exec feh ~/Pictures/uk-kbd-layout.png
 
-bindsym $mod+m 			exec --no-startup-id urxvt -e ncmpcpp
+bindsym $mod+m 			exec bash ~/.scripts/switch_keyboard
 bindsym $mod+Shift+m		exec --no-startup-id lmc mute
 
 # #---Workspace Bindings---# #
@@ -299,6 +299,10 @@ for_window [title="^.list_scripts.sh$"] move to  workspace $ws10
 for_window [title="sconsify$"] floating enable;
 for_window [title="sconsify$"] resize set 720 480;
 for_window [title="sconsify$"] move position center 
+
+for_window [title="feh.*home/uygar/Pictures/uk-kbd-layout.png$"] floating enable;
+for_window [title="feh.*home/uygar/Pictures/uk-kbd-layout.png$"] resize set 557 195;
+for_window [title="feh.*home/uygar/Pictures/uk-kbd-layout.png$"] move position 0 0 
 
 exec --no-startup-id urxvt -n dropdown -e tmuxinit
 
