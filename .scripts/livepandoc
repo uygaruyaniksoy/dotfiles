@@ -1,0 +1,8 @@
+echo "$1"
+
+touch "$1"
+pandoc "$1" -t beamer -o $(echo "$1" | sed "s/md/pdf/")
+zathura $(echo "$1" | sed "s/md/pdf/") &
+
+echo "$1" | entr pandoc "$1" -t beamer -o $(echo "$1" | sed "s/md/pdf/") &
+

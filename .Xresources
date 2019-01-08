@@ -3,3 +3,12 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755 : false
 
 
+URxvt.keysym.M-Up: eval:scroll_up 5
+URxvt.keysym.M-Down: eval:scroll_down 5
+URxvt.keysym.M-Home: eval:scroll_to_top
+URxvt.keysym.M-End:  eval:scroll_to_bottom
+
+URxvt.keysym.Home: \033[1~
+URxvt.keysym.End: \033[4~
+URxvt.keysym.KP_Home: \033[1~
+URxvt.keysym.KP_End:  \033[4~

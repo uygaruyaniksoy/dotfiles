@@ -1,0 +1,15 @@
+case $(echo 'on\noff' | dmenu -p "set monitor ...") in
+    on)
+        SELECTED_MONITOR=`xrandr | grep '\bconnected' | awk '{ print $1 }' | dmenu -p "select monitor"`
+        DIRECTION=`echo 'same-as\nright-of\nleft-of' | dmenu -p "where to put it"`
+        DESTINATION_MONITOR=`xrandr | grep '\bconnected' | awk '{ print $1 }' | dmenu -p "$DIRECTION ...?"`
+        echo "$SELECTED_MONITOR $DIRECTION $DESTINATION_MONITOR" &&
+        xrandr --output $SELECTED_MONITOR --auto "--$DIRECTION" $DESTINATION_MONITOR
+        ;;
+    off)
+        SELECTED_MONITOR=`xrandr | grep '\bconnected' | awk '{ print $1 }' | dmenu`
+        xrandr --output "$SELECTED_MONITOR" --off
+        ;;
+esac
+
+

@@ -120,3 +120,4 @@ export EDITOR='vi'
 export BROWSER="chromium-browser"
 export TERMINAL="rxvt"
 export TERM="rxvt"
+
