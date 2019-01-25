@@ -1,1 +1,7 @@
-wal -i $(echo ~/Pictures/wallpapers/"$(ls ~/Pictures/wallpapers | shuf -n 1)") && wal -R
+WALL=$(echo ~/Pictures/wallpapers/"$(ls ~/Pictures/wallpapers | shuf -n 1)")
+
+wal -i $WALL && wal -R
+
+rm ~/.config/wall/*
+cp $WALL ~/.config/wall/
+

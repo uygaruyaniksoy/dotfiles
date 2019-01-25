@@ -9,4 +9,5 @@
 !.config/qt5ct/
 !.config/compton.conf
 !.config/mimeapps.list
-
+!.config/ranger/rc.conf
+!.config/ranger/rifle.conf

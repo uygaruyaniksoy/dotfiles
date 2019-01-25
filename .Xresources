@@ -1,7 +1,32 @@
+!! Appearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.background: black
+urxvt.foreground: gray
+!! Font prefferenes
+urxvt.font: xft:DejaVu Sans Mono:pixelsize=12
+urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=12:weight=bold
+urxvt.letterSpace: -1
+!! Larger history limit
+urxvt.saveLines: 1000000
+!! transparency
+urxvt*transparent: true
+urxvt*shading: 15
+
+!! Perl extensions
+urxvt.perl-ext-common: default,matcher,font-size,keyboard-select
+!! Open urls in browser with Control-Click
+urxvt.urlLauncher: /usr/bin/chromium-browser
+urxvt.matcher.button: C1
+URxvt.keysym.Control-0x2b: perl:font-size:increase
+URxvt.keysym.Control-0x2d: perl:font-size:decrease
+
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keyboard-select.clipboard: true
+
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755 : false
-
 
 URxvt.keysym.M-Up: eval:scroll_up 5
 URxvt.keysym.M-Down: eval:scroll_down 5
