@@ -7,7 +7,7 @@ case $(echo 'on\noff' | dmenu -p "set monitor ...") in
         xrandr --output $SELECTED_MONITOR --auto "--$DIRECTION" $DESTINATION_MONITOR
         ;;
     off)
-        SELECTED_MONITOR=`xrandr | grep '\bconnected' | awk '{ print $1 }' | dmenu`
+        SELECTED_MONITOR=`xrandr --listmonitors |  awk '{ print $2 }' | sed 's/[+0-9]//' | dmenu`
         xrandr --output "$SELECTED_MONITOR" --off
         ;;
 esac

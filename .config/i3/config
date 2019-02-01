@@ -11,8 +11,8 @@ exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id steam
 exec --no-startup-id nm-applet
-exec --no-startup-id /usr/bin/setxkbmap -option "caps:swapescape" # swap caps and escape
-exec --no-startup-id xset r rate 200 40 # repeat rate
+exec --no-startup-id /usr/bin/setxkbmap -option "caps:swapescape"
+exec --no-startup-id xset r rate 200 40
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
@@ -132,7 +132,7 @@ bindsym $mod+F2		restart
 bindsym $mod+F3	    exec --no-startup-id  compton
 bindsym $mod+F4     mode "$mode_system"
 
-bindsym Print 		exec --no-startup-id "flameshot gui" #screenshot
+bindsym Print 		exec --no-startup-id "flameshot gui"
 
 # #---Extra XF86 Keys---# #
 bindsym XF86AudioMute		exec --no-startup-id amixer -D pulse set Master 1+ toggle
