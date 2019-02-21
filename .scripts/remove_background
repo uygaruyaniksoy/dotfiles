@@ -1,0 +1,6 @@
+WALL="/home/uygar/Pictures/grub_wallpapers/black.png"
+feh --bg-scale $WALL 
+
+wal  --theme base16-black-metal-venom  
+rm ~/.config/wall/*
+cp $WALL ~/.config/wall/
