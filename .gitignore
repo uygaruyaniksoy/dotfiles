@@ -12,3 +12,5 @@
 !.config/ranger/rc.conf
 !.config/ranger/rifle.conf
 !.surf
+.surf/cache
+
