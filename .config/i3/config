@@ -1,4 +1,4 @@
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 gaps inner 10
 gaps outer 0
 set $mod Mod4
@@ -11,13 +11,18 @@ exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id steam
 exec --no-startup-id nm-applet
-exec --no-startup-id /usr/bin/setxkbmap -option "caps:swapescape"
+exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape"
 exec --no-startup-id xset r rate 200 40
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
-set_from_resource $red		color9  #dd0000
-set_from_resource $white	color15 #dddddd
+set_from_resource $black	    color8  #000000
+set_from_resource $red		    color3  #dd0000
+set_from_resource $white	    color15 #dddddd
+
+client.focused $red $red $darkblack $red $red
+client.focused_inactive $black $darkblack $red $black $black
+client.unfocused #2C2C2C #2C2C2C #ffffff #2C2C2C
 
 bar {
 	font pango:DejaVu Sans Mono, FontAwesome 8
@@ -27,6 +32,8 @@ bar {
 			focused_workspace  $red $red $darkblack
 			inactive_workspace $darkblack $darkblack $white
 	}
+    tray_output eDP-1-1
+    tray_padding 0 
 	status_command /home/uygar/.bumblebee-status/bumblebee-status -d -m spotify gcalcli battery amixer datetime
 	position top
 	mode dock
@@ -55,7 +62,7 @@ bindsym $mod+w			exec urxvt -e calcurse
 bindsym $mod+Shift+w    exec feh ~/Pictures/uk-kbd-layout.png
 
 bindsym $mod+e          layout default
-bindsym $mod+Shift+e    layout tabbed
+bindsym $mod+Shift+e    layout toggle tabbed stacking
 
 bindsym $mod+r          mode "$mode_resize"
 bindsym $mod+Shift+r 	exec urxvt -e ranger
@@ -64,6 +71,8 @@ bindsym $mod+t			split toggle
 bindsym $mod+Shift+t	exec urxvt -e sh -c "tmux attach || tmux new"
 
 bindsym $mod+o			sticky toggle
+
+bindsym $mod+u			focus parent
 
 bindsym $mod+a			gaps outer current plus 5
 bindsym $mod+Shift+a	gaps outer current minus 5
