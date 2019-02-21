@@ -1,1 +1,1 @@
-ls src/* | entr -s "elm-format src/Main.elm --yes && elm make src/Main.elm --output=dist/app.js"
+ls src/* | entr -s "elm-format src/Main.elm --yes && elm make src/Main.elm --output=dist/app.js --debug"

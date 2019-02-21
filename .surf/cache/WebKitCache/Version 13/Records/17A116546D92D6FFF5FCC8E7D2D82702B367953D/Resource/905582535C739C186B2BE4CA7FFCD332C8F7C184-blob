@@ -1,0 +1,1272 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <!--[if IE]><![endif]-->
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="https://ceng.metu.edu.tr/sites/all/themes/ceng/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="text/calendar" title="Add to My Calendar" href="webcal://ceng.metu.edu.tr/calendar-node-field-event-date-and-time/ical/2019-02/calendar.ics" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Department of Computer Engineering</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+   <!-- <meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0, maximum-scale=1" />
+
+    <meta http-equiv="cleartype" content="on">
+
+  <style>
+@import url("/modules/system/system.base.css?pmt0bw");
+</style>
+<style>
+@import url("/sites/all/modules/views_slideshow/views_slideshow.css?pmt0bw");
+</style>
+<style>
+@import url("/modules/aggregator/aggregator.css?pmt0bw");
+@import url("/sites/all/modules/calendar/css/calendar_multiday.css?pmt0bw");
+@import url("/sites/all/modules/date/date_api/date.css?pmt0bw");
+@import url("/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?pmt0bw");
+@import url("/sites/all/modules/fences/field.css?pmt0bw");
+@import url("/modules/node/node.css?pmt0bw");
+@import url("/modules/user/user.css?pmt0bw");
+@import url("/sites/all/modules/views/css/views.css?pmt0bw");
+</style>
+<style>
+@import url("/sites/all/modules/ctools/css/ctools.css?pmt0bw");
+@import url("/sites/all/modules/lightbox2/css/lightbox.css?pmt0bw");
+@import url("/sites/wwwceng/files/css/menu_icons.css?pmt0bw");
+@import url("/sites/all/modules/panels/css/panels.css?pmt0bw");
+@import url("/sites/all/modules/views_slideshow/views_slideshow_controls_text.css?pmt0bw");
+@import url("/sites/all/modules/date/date_views/css/date_views.css?pmt0bw");
+@import url("/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?pmt0bw");
+@import url("/sites/all/modules/nice_menus/css/nice_menus.css?pmt0bw");
+@import url("/sites/all/modules/nice_menus/css/nice_menus_default.css?pmt0bw");
+</style>
+<style>
+@import url("/sites/all/themes/ceng/css/normalize.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/wireframes.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/layouts/responsive-sidebars.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/tabs.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/bootstrap.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/pages.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/blocks.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/navigation.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/views-styles.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/nodes.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/comments.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/forms.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/fields.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/print.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/slider.css?pmt0bw");
+@import url("/sites/all/themes/ceng/css/font-awesome.css?pmt0bw");
+</style>
+<style>
+@import url("/sites/wwwceng/files/css_injector/css_injector_1.css?pmt0bw");
+@import url("/sites/wwwceng/files/css_injector/css_injector_2.css?pmt0bw");
+@import url("/sites/wwwceng/files/css_injector/css_injector_3.css?pmt0bw");
+@import url("/sites/wwwceng/files/css_injector/css_injector_4.css?pmt0bw");
+</style>
+ 
+  
+  <script src="/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script src="/misc/jquery.once.js?v=1.2"></script>
+<script src="/misc/drupal.js?pmt0bw"></script>
+<script src="/sites/all/modules/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+<script src="/sites/all/modules/nice_menus/js/jquery.bgiframe.js?v=2.1"></script>
+<script src="/sites/all/modules/nice_menus/js/jquery.hoverIntent.js?v=0.5"></script>
+<script src="/sites/all/modules/nice_menus/js/superfish.js?v=1.4.8"></script>
+<script src="/sites/all/modules/nice_menus/js/nice_menus.js?v=1.0"></script>
+<script src="/sites/all/modules/lightbox2/js/lightbox.js?pmt0bw"></script>
+<script src="/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?pmt0bw"></script>
+<script src="/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?pmt0bw"></script>
+<script src="/sites/all/themes/ceng/js/bootstrap-tab.js?pmt0bw"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ceng","theme_token":"7QP9kiPaxMHEe6vV600-cTQealWLYMjWTX9-EXSNcKI","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"public:\/\/css\/menu_icons.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow_controls_text.css":1,"sites\/all\/modules\/date\/date_views\/css\/date_views.css":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/all\/themes\/ceng\/system.menus.css":1,"sites\/all\/themes\/ceng\/system.messages.css":1,"sites\/all\/themes\/ceng\/system.theme.css":1,"sites\/all\/themes\/ceng\/css\/normalize.css":1,"sites\/all\/themes\/ceng\/css\/wireframes.css":1,"sites\/all\/themes\/ceng\/css\/layouts\/responsive-sidebars.css":1,"sites\/all\/themes\/ceng\/css\/page-backgrounds.css":1,"sites\/all\/themes\/ceng\/css\/tabs.css":1,"sites\/all\/themes\/ceng\/css\/bootstrap.css":1,"sites\/all\/themes\/ceng\/css\/pages.css":1,"sites\/all\/themes\/ceng\/css\/blocks.css":1,"sites\/all\/themes\/ceng\/css\/navigation.css":1,"sites\/all\/themes\/ceng\/css\/views-styles.css":1,"sites\/all\/themes\/ceng\/css\/nodes.css":1,"sites\/all\/themes\/ceng\/css\/comments.css":1,"sites\/all\/themes\/ceng\/css\/forms.css":1,"sites\/all\/themes\/ceng\/css\/fields.css":1,"sites\/all\/themes\/ceng\/css\/print.css":1,"sites\/all\/themes\/ceng\/css\/slider.css":1,"sites\/all\/themes\/ceng\/css\/font-awesome.css":1,"public:\/\/css_injector\/css_injector_1.css":1,"public:\/\/css_injector\/css_injector_2.css":1,"public:\/\/css_injector\/css_injector_3.css":1,"public:\/\/css_injector\/css_injector_4.css":1},"js":{"\/\/platform.twitter.com\/widgets.js":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/themes\/ceng\/js\/bootstrap-tab.js":1}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)private:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false,"useragent":"Mozilla\/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/11.0 Safari\/605.1.15 Surf\/2.0"},"viewsSlideshow":{"research-default_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0},"senior_projects-default_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0},"Slider_Main_Page-block_1":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowControls":{"research-default_1":{"top":{"type":"viewsSlideshowControlsText"}},"senior_projects-default_1":{"top":{"type":"viewsSlideshowControlsText"}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_research-default_1":{"num_divs":6,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"research-default_1","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":0,"pause_on_click":0,"play_on_hover":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"pause_after_slideshow":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"},"#views_slideshow_cycle_main_senior_projects-default_1":{"num_divs":31,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"senior_projects-default_1","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":0,"pause_on_click":0,"play_on_hover":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"pause_after_slideshow":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"},"#views_slideshow_cycle_main_Slider_Main_Page-block_1":{"num_divs":1,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"Slider_Main_Page-block_1","effect":"fade","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"play_on_hover":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"pause_after_slideshow":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":1,"cleartypenobg":1,"advanced_options":"{\u0022containerResize\u0022:\u00220\u0022,\u0022slideResize\u0022:\u00220\u0022}"}},"nice_menus_options":{"delay":"800","speed":"slow"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+    
+
+  
+<script type="text/javascript">
+var $a = jQuery.noConflict();
+$a(document).ready(function(){
+	$a("ul.nice-menu li ul").hover(function(){
+		$a(this).parent().toggleClass("aktif");
+	});
+});
+</script>
+
+
+<script type="text/javascript">
+ var $e = jQuery.noConflict();
+ $e(document).ready(function(){
+		
+	$e("ul.nice-menu li").click(function() {
+		  $e(this).find("ul").css("display","block");
+	});
+	
+	$e("ul.nice-menu li.first a.menulinks").click(function() {
+		  $e("ul.nice-menu li").toggleClass("goster");
+		  $e("ul.nice-menu li.first a").toggleClass("open");
+		  $e("#content").toggleClass("overlay");
+	});
+	
+ });
+</script>
+
+</head>
+<body class="html front not-logged-in no-sidebars page-anasayfa i18n-en page-panels" >
+
+<div class="odtu-top">
+</div><!--end odtu-top-->
+
+<p id="skip-link">
+<a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+</p>
+
+
+ <div id="language-switcher">
+     <div id="block-menu-menu-language-switcher" class="block block-menu first odd" role="navigation">
+
+      
+  <ul id="nav"><li class="menu__item is-leaf first leaf"><a href="http://www.metu.edu.tr" class="menu__link">METU</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://ceng.metu.edu.tr/tr" class="menu__link">Türkçe</a></li>
+</ul>
+</div>
+ </div><!--end language-switcher-->
+
+<div style="clear:both"></div>
+<div class="container">
+
+    <div id="page">
+  <div class="container-top">
+  <header id="header" role="banner">
+	
+          <a  href="/" title="Home" rel="home" id="logo" class="logo-en"></a>
+        
+    
+     <div style="clear:both"></div>     
+   
+  
+        
+        
+     <div style="clear:both"></div>
+	
+          <hgroup id="name-and-slogan">
+                  <h1 id="site-name">
+            <span><a  href="/">Department of Computer Engineering</a></span>
+          </h1>
+        
+              </hgroup><!-- /#name-and-slogan -->
+        
+    <div style="clear:both"></div>
+            
+    <div id="navigation">
+               
+                    
+                     
+                       
+      
+            <nav id="main-menu" role="navigation">
+        <div class="region region-navigation">
+    <div id="block-nice-menus-1" class="block block-nice-menus first last odd">
+
+      
+  <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu__item menu-823 menu-path-nolink first odd "><a class="menu__link menulinks nolink">Navigation Menu</a></li>
+<li class="menu__item menu-814 menu-path-front  even "><a href="/" class="menu__link active">Home</a></li>
+<li class="menu__item menu-826 menuparent  menu-path-nolink  odd "><a class="menu__link nolink">About</a><ul><li class="menu__item menu-989 menu-path-node-149 first odd "><a href="/information" class="menu__link">Information</a></li>
+<li class="menu__item menu-828 menu-path-node-76  even "><a href="/contact" title="Contact" class="menu__link">Administrative</a></li>
+<li class="menu__item menu-827 menu-path-node-75  odd last"><a href="/location" class="menu__link">Location</a></li>
+</ul></li>
+<li class="menu__item menu-829 menuparent  menu-path-nolink  even "><a title="Faculty Memebers" class="menu__link nolink">People</a><ul><li class="menu__item menu-831 menu-path-node-170 first odd "><a href="/node/170" title="Faculty Members" class="menu__link">Faculty Members</a></li>
+<li class="menu__item menu-1024 menu-path-node-2633  even "><a href="/assistants" title="Research &amp; Teaching Assistants" class="menu__link">Assistants</a></li>
+<li class="menu__item menu-832 menu-path-node-80  odd "><a href="/staff" title="Staff" class="menu__link">Staff</a></li>
+<li class="menu__item menu-1073 menu-path-node-3213  even last"><a href="/former-assistants" title="Former Assistants" class="menu__link">Former Assistants</a></li>
+</ul></li>
+<li class="menu__item menu-834 menuparent  menu-path-nolink  odd "><a class="menu__link nolink">Undergraduate</a><ul><li class="menu__item menu-836 menu-path-node-84 first odd "><a href="/program-educational-objectives" class="menu__link">Program Educational Objectives</a></li>
+<li class="menu__item menu-1074 menu-path-node-3280  even "><a href="/undergraduate-curriculum" class="menu__link">Curriculum</a></li>
+<li class="menu__item menu-837 menu-path-node-85  odd "><a href="/course-list" title="Course List" class="menu__link">Course List</a></li>
+<li class="menu__item menu-838 menu-path-node-86  even "><a href="/technical-electives" title="Technical Electives" class="menu__link">Technical Electives</a></li>
+<li class="menu__item menu-839 menu-path-node-87  odd "><a href="/senior-design-projects" class="menu__link">Senior Design Projects</a></li>
+<li class="menu__item menu-840 menu-path-node-88  even "><a href="/summer-practice" title="Summer Practice" class="menu__link">Summer Practice</a></li>
+<li class="menu__item menu-842 menu-path-node-90  odd "><a href="/enrollment-and-graduation-figures" title="Enrollment and Graduation Figures" class="menu__link">Enrollment and Graduation Figures</a></li>
+<li class="menu__item menu-843 menu-path-node-91  even last"><a href="/forms" class="menu__link">Forms</a></li>
+</ul></li>
+<li class="menu__item menu-844 menuparent  menu-path-nolink  even "><a title="Graduate Programs" class="menu__link nolink">Graduate</a><ul><li class="menu__item menu-845 menu-path-node-93 first odd "><a href="/general-information" class="menu__link">General Information</a></li>
+<li class="menu__item menu-846 menu-path-node-94  even "><a href="/graduate-curriculum" title="Graduate Curriculum" class="menu__link">Curriculum</a></li>
+<li class="menu__item menu-1075 menu-path-node-3288  odd "><a href="/grad/courses" class="menu__link">Course List</a></li>
+<li class="menu__item menu-848 menu-path-node-96  even "><a href="/ms-ceng-thesis" class="menu__link">MS in CENG with thesis</a></li>
+<li class="menu__item menu-850 menu-path-node-98  odd "><a href="/ms-ceng-without-thesis" class="menu__link">MS in CENG without thesis</a></li>
+<li class="menu__item menu-851 menu-path-node-99  even "><a href="/ms-se-without-thesis" title="MS in Software Engineering without thesis" class="menu__link">MS in SE without thesis</a></li>
+<li class="menu__item menu-852 menu-path-node-100  odd "><a href="/phd-degree" title="PhD Degree" class="menu__link">PhD Degree</a></li>
+<li class="menu__item menu-853 menu-path-node-102  even "><a href="/prospective-students-0" title="Prospective Students" class="menu__link">Prospective Students</a></li>
+<li class="menu__item menu-854 menu-path-node-103  odd "><a href="/admission-and-application" title="Admission and Application" class="menu__link">Admission and Application</a></li>
+<li class="menu__item menu-849 menu-path-node-97  even "><a href="/faq-ms-without-thesis-programs" title="FAQ for MS without Thesis Programs" class="menu__link">FAQ for MS without Thesis Programs</a></li>
+<li class="menu__item menu-1078 menu-path-node-101  odd "><a href="/ceng-phd-qualifying-exam-guidelines" class="menu__link">CENG Ph.D. Qualifying Exam Guidelines</a></li>
+<li class="menu__item menu-1079 menu-path-node-3633  even "><a href="/phd-qualifying-exam" class="menu__link">Ph.D. Qualifying Exam</a></li>
+<li class="menu__item menu-855 menu-path-node-104  odd last"><a href="/forms-0" title="Froms" class="menu__link">Forms</a></li>
+</ul></li>
+<li class="menu__item menu-856 menu-path-node-105  odd "><a href="/research" title="Research" class="menu__link">Research</a></li>
+<li class="menu__item menu-1019 menuparent  menu-path-nolink  even "><a class="menu__link nolink">Resources</a><ul><li class="menu__item menu-857 menu-path-node-115 first odd "><a href="/computing-services" class="menu__link">Computing Services</a></li>
+<li class="menu__item menu-859 menu-path-node-91  even "><a href="/forms" title="Student Documents" class="menu__link">Student Documents</a></li>
+<li class="menu__item menu-1136 menu-path-node-3711  odd last"><a href="/labschedule" class="menu__link">Lab Schedule</a></li>
+</ul></li>
+<li class="menu__item menu-931 menu-path-cengmetuedutr-prospective-students  odd last"><a href="http://ceng.metu.edu.tr/prospective-students" class="menu__link prospective">Prospective Students</a></li>
+</ul>
+
+</div>
+  </div>
+        </nav>
+	 </div><!-- /#navigation -->
+    
+
+      </header>
+ 	 </div><!--end container-top-->
+     <div style="clear:both"></div>
+  
+
+  <div id="main">
+  
+
+    <div id="content" class="column" role="main">
+                  <a id="main-content"></a>
+                                                
+
+
+<div class="ust-bolum">
+<div class="slider">
+<div class="panel-pane pane-views pane-slider-main-page"  >
+  
+      
+  
+  <div class="view view-Slider-Main-Page view-id-Slider_Main_Page view-display-id-block view-dom-id-3cf85dcb7068953d7853bc77c9b0e9fb">
+        
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+    
+    <div id="views_slideshow_cycle_main_Slider_Main_Page-block_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_Slider_Main_Page-block_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_Slider_Main_Page-block_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-first views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+    
+          <a href="/slider/aramiza-hosgeldiniz"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/sites/wwwceng/files/styles/slider_image/public/slider/standard_image/aramiza-hosgeldiniz.png?itok=gGYnZw-x" width="500" height="250" alt="" /></a>  </div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+</div><!--end featured-slider-->
+<div class="quick-links">
+<div class="panel-pane pane-block pane-menu-menu-quick-links"  >
+  
+        <h2 class="pane-title">
+      Quick Links    </h2>
+    
+  
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="http://tanitim.ceng.metu.edu.tr/" class="menu__link pro-stu menu_icon menu-882" target="_blank">Prospective Students</a></li>
+<li class="menu__item is-leaf leaf"><a href="/course-list" class="menu__link course-list menu_icon menu-884">Course List</a></li>
+<li class="menu__item is-leaf leaf"><a href="/course-schedule" class="menu__link research menu_icon menu-885 menu-1077">Course Schedule</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://ceng.metu.edu.tr/computing-services" class="menu__link research menu_icon menu-885 menu-1021">Computing Services</a></li>
+<li class="menu__item is-leaf last leaf"><a href="https://webmail.ceng.metu.edu.tr/" class="menu__link webmail menu_icon menu-887" target="_blank">Webmail</a></li>
+</ul>
+  
+  </div>
+</div><!--end quick-links-->
+<div class="external-links">
+<div class="panel-pane pane-block pane-menu-menu-external-links"  >
+  
+        <h2 class="pane-title">
+      External Links    </h2>
+    
+  
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://cow.ceng.metu.edu.tr/" class="menu__link cow menu_icon menu-889" target="_blank">COW Ceng on the Web</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://idea.metu.edu.tr" class="menu__link menu_icon menu-890" target="_blank">IDEA</a></li>
+<li class="menu__item is-leaf leaf"><a href="http://www.cclub.metu.edu.tr/" target="_blank" class="menu__link menu_icon menu-891">Computer Club</a></li>
+<li class="menu__item is-leaf leaf"><a href="/research" class="menu__link cow menu_icon menu-889 menu-892">Research</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://oidb.metu.edu.tr/akademik-takvim" class="menu__link menu_icon menu-893" target="_blank">Academic Calendar</a></li>
+</ul>
+  
+  </div>
+</div><!--end external-links-->
+
+</div><!--end ust bolum-->
+
+<!-- center section -->
+<div class="orta-bolum" >
+
+ <div class="news">
+      <div class="news">
+    <div class="panel-pane pane-views pane-announcements news-blok"  >
+  
+        <h2 class="pane-title">
+      NEWS    </h2>
+    
+  
+  <div class="view view-announcements view-id-announcements view-display-id-default view-dom-id-890df02061f0dc1793f5fa73d7c2b9f5">
+            <div class="view-header">
+      <p><a href="all-news" class="all_announ_inter">all news &gt;&gt; </a></p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+          <ul>          <li class="">  
+          
+  <div class="field-product-image">
+    <img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/default_images/news_3_1.png" alt="" />  </div>
+    
+          <h4 class="list-title"><a href="/announcement/phdqualifying-exam-schedule">Ph.D.Qualifying Exam Schedule</a></h4>  </li>
+          <li class="">  
+          
+  <div class="field-product-image">
+    <img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/default_images/news_3_1.png" alt="" />  </div>
+    
+          <h4 class="list-title"><a href="/announcement/asst-prof-ebru-aydin-gol-received-h2020-msca-if">Asst. Prof. Ebru Aydin Gol received H2020 MSCA-IF</a></h4>  </li>
+          <li class="">  
+          
+  <div class="field-product-image">
+    <img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/default_images/news_3_1.png" alt="" />  </div>
+    
+          <h4 class="list-title"><a href="/announcement/tcns-outstanding-paper-award">&quot;TCNS Outstanding Paper Award&quot;</a></h4>  </li>
+          <li class="">  
+          
+  <div class="field-product-image">
+    <img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/default_images/news_3_1.png" alt="" />  </div>
+    
+          <h4 class="list-title"><a href="/announcement/y-doc-dr-seyda-ertekinin-basarisi"> Y. Doç. Dr. Şeyda Ertekin&#039;in başarısı</a></h4>  </li>
+          <li class="">  
+          
+  <div class="field-product-image">
+    <img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/default_images/news_3_1.png" alt="" />  </div>
+    
+          <h4 class="list-title"><a href="/announcement/medes17-bangkokta-en-iyi-makale-odulu">MEDES&#039;17 Bangkok&#039;ta en iyi makale ödülü</a></h4>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-research research-blok"  >
+  
+        <h2 class="pane-title">
+      RESEARCH    </h2>
+    
+  
+  <div class="view view-research view-id-research view-display-id-default view-dom-id-7a464c38cc3f2521c1813c5eb8d0c237">
+            <div class="view-header">
+      <p><a href="all-researchs" class="all-research">all &gt;&gt; </a></p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+          <div class="views-slideshow-controls-top clearfix">
+        <div id="views_slideshow_controls_text_research-default_1" class="views-slideshow-controls-text views_slideshow_controls_text">
+  <span id="views_slideshow_controls_text_previous_research-default_1" class="views-slideshow-controls-text-previous views_slideshow_controls_text_previous">
+  <a href="#" rel="prev">Previous</a>
+</span>
+  <span id="views_slideshow_controls_text_pause_research-default_1" class="views-slideshow-controls-text-pause views_slideshow_controls_text_pause  views-slideshow-controls-text-status-play"><a href="#">Pause</a></span>
+  <span id="views_slideshow_controls_text_next_research-default_1" class="views-slideshow-controls-text-next views_slideshow_controls_text_next">
+  <a href="#" rel="next">Next</a>
+</span>
+</div>
+      </div>
+    
+    <div id="views_slideshow_cycle_main_research-default_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_research-default_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_research-default_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-first views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+    
+          
+  <div class="field-image">
+    <a href="/research/bioinformatics-and-computational-biology-laboratory"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/fpv_1aon_2.jpg" width="371" height="156" alt="" /></a>  </div>
+    
+          <div class="research-body">Bioinformatics and Computational Biology Laboratory was officially established in 2006 with the goal <a href="/research/bioinformatics-and-computational-biology-laboratory" class="views-more-link">Learn more</a></div>  </div>
+</div>
+<div id="views_slideshow_cycle_div_research-default_1_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image">
+    <a href="/research/wins-wireless-systems-networks-and-cybersecurity-lab"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/2211.jpg" width="900" height="398" alt="" /></a>  </div>
+    
+          <div class="research-body">Welcome to the WIreless Systems, Networks and CyberSecurity (WINS) Lab. Established on the April Foo <a href="/research/wins-wireless-systems-networks-and-cybersecurity-lab" class="views-more-link">Learn more</a></div>  </div>
+</div>
+<div id="views_slideshow_cycle_div_research-default_1_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image">
+    <a href="/research/kovan-research-laboratory"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/nao2.jpg" width="436" height="183" alt="" /></a>  </div>
+    
+          <div class="research-body">KOVAN Research Lab is a center for state-of-the-art autonomous robotics research, located at the Mod <a href="/research/kovan-research-laboratory" class="views-more-link">Learn more</a></div>  </div>
+</div>
+<div id="views_slideshow_cycle_div_research-default_1_3" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image">
+    <a href="/research/intelligent-systems-laboratory"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/isl_tanitim_2_0_0.jpg" width="436" height="183" alt="" /></a>  </div>
+    
+          <div class="research-body">Intelligent Systems Laboratory (ISL) of METU has been established&nbsp; with the aim of working on i <a href="/research/intelligent-systems-laboratory" class="views-more-link">Learn more</a></div>  </div>
+</div>
+<div id="views_slideshow_cycle_div_research-default_1_4" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image">
+    <a href="/research/multimedia-database-research-lab"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/mm_0.png" width="436" height="183" alt="" /></a>  </div>
+    
+          <div class="research-body">Multimedia Database Laboratory, established in 2006 at Computer Engineering Department of Middle Eas <a href="/research/multimedia-database-research-lab" class="views-more-link">Learn more</a></div>  </div>
+</div>
+<div id="views_slideshow_cycle_div_research-default_1_5" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-6 views_slideshow_cycle_hidden views-row-last views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image">
+    <a href="/research/computer-graphics-and-visualization"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/research_0.jpg" width="450" height="180" alt="" /></a>  </div>
+    
+          <div class="research-body">METU Computer Graphics and Visualization Research Group (CGV) is formed to study various research ar <a href="/research/computer-graphics-and-visualization" class="views-more-link">Learn more</a></div>  </div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-announcement seminars-blok"  id="announcement-id" >
+  
+        <h2 class="pane-title">
+      ANNOUNCEMENTS    </h2>
+    
+  
+  <div class="view view-announcement view-id-announcement view-display-id-default view-dom-id-a20c1d92c78e383b3cc9df84705a6b5c">
+            <div class="view-header">
+      <p><a href="all-announcements" class="all_announ_inter">all  &gt;&gt; </a></p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+          <ul>          <li class="">  
+          <div class="announcements-img"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/thumbnail/private/default_images/news_3_1_3.png?itok=11L64jPy" width="48" height="48" alt="" /></div>    
+          <h4 class="list-title"><a href="/arastirma-gorevlisi-alimi-degerlendirme-sonuclari">Araştırma Görevlisi Alımı Ön Değerlendirme Sonuçları</a></h4>  </li>
+          <li class="">  
+          <div class="announcements-img"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/thumbnail/private/default_images/news_3_1_3.png?itok=11L64jPy" width="48" height="48" alt="" /></div>    
+          <h4 class="list-title"><a href="/webmail-servisinde-duzenleme">Webmail Servisinde Düzenleme</a></h4>  </li>
+          <li class="">  
+          <div class="announcements-img"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/thumbnail/private/default_images/news_3_1_3.png?itok=11L64jPy" width="48" height="48" alt="" /></div>    
+          <h4 class="list-title"><a href="/reorganization-non-affiliated-student-accounts">Reorganization of Non-affiliated Student Accounts</a></h4>  </li>
+          <li class="">  
+          <div class="announcements-img"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/thumbnail/private/default_images/news_3_1_3.png?itok=11L64jPy" width="48" height="48" alt="" /></div>    
+          <h4 class="list-title"><a href="/spring-2018-2019-course-schedule">Spring 2018-2019  Course Schedule</a></h4>  </li>
+          <li class="">  
+          <div class="announcements-img"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/thumbnail/private/default_images/news_3_1_3.png?itok=11L64jPy" width="48" height="48" alt="" /></div>    
+          <h4 class="list-title"><a href="/tezsiz-yuksek-lisans-donem-basi-toplantisi-0">Tezsiz Yüksek Lisans Dönem Başı Toplantısı</a></h4>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-seminars seminars-blok"  >
+  
+        <h2 class="pane-title">
+      SEMINARS    </h2>
+    
+  
+  <div class="view view-seminars view-id-seminars view-display-id-default view-dom-id-7dbb77a83a0e5500df857fba52121229">
+            <div class="view-header">
+      <p><a href="all-seminars" class="all_seminars">all seminars &gt;&gt;</a></p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+          <ul>          <li class="">  
+          <div class="seminar-title"><a href="/domain-adaptation-graphs-transferring-spectral-properties-label-functions">Domain Adaptation On Graphs By Transferring Spectral Properties Of Label Functions</a></div>    
+          <div class="seminar-body">
+  <div class="field-body">
+    <p>Traditional machine learning algorithms rely on the...</div>  </li>
+          <li class="">  
+          <div class="seminar-title"><a href="/tdgammon-revisited-integrating-invalid-actions-and-dice-factor-continuous-action-and-observation">TDGammon Revisited: Integrating Invalid Actions and Dice Factor In Continuous Action and Observation Space</a></div>    
+          <div class="seminar-body">
+  <div class="field-body">
+    <p>After TDGammon's success in 1991, the interest in game...</div>  </li>
+          <li class="">  
+          <div class="seminar-title"><a href="/incentive-payment-model-future-communication-networks">AN INCENTIVE PAYMENT MODEL TO FUTURE COMMUNICATION NETWORKS</a></div>    
+          <div class="seminar-body">
+  <div class="field-body">
+    <p>The developments in telecommunication world have...</div>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-senior-projects panel-students"  >
+  
+        <h2 class="pane-title">
+      SENIOR PROJECTS    </h2>
+    
+  
+  <div class="view view-senior-projects view-id-senior_projects view-display-id-default view-dom-id-bd37b0a241c2d636b498227cfcf08e0e">
+            <div class="view-header">
+      <p><a href="all-senior-projects" class="all-research">all &gt;&gt; </a></p>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+          <div class="views-slideshow-controls-top clearfix">
+        <div id="views_slideshow_controls_text_senior_projects-default_1" class="views-slideshow-controls-text views_slideshow_controls_text">
+  <span id="views_slideshow_controls_text_previous_senior_projects-default_1" class="views-slideshow-controls-text-previous views_slideshow_controls_text_previous">
+  <a href="#" rel="prev">Previous</a>
+</span>
+  <span id="views_slideshow_controls_text_pause_senior_projects-default_1" class="views-slideshow-controls-text-pause views_slideshow_controls_text_pause  views-slideshow-controls-text-status-play"><a href="#">Pause</a></span>
+  <span id="views_slideshow_controls_text_next_senior_projects-default_1" class="views-slideshow-controls-text-next views_slideshow_controls_text_next">
+  <a href="#" rel="next">Next</a>
+</span>
+</div>
+      </div>
+    
+    <div id="views_slideshow_cycle_main_senior_projects-default_1" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_senior_projects-default_1" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_senior_projects-default_1_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-first views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+    
+          
+  <div class="field-image--">
+    <a href="/tetris"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/tetris.png?itok=f4ieodev" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/pusodokod"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/pusodokod.png?itok=O_d6JrRi" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/keepmeaware"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/keepmeaware2.png?itok=ey6efwvl" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_3" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/mallorn"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/mallorn.png?itok=fPmbpBID" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_4" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/newline"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/newline.png?itok=2MBOErIW" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_5" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-6 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/default"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/default2.png?itok=XKn-d5mv" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_6" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-7 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/payinekereg"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/payinekereg2.png?itok=rqoEDGeu" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_7" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-8 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/overcode"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/overcode2.png?itok=iURPAUin" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_8" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-9 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/dynadraw"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/dynadraw.png?itok=8tTOi4kR" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_9" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-10 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/bluequoters"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/bluequoters.png?itok=1ZS02wMI" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_10" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-11 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/codeine"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/codeine.png?itok=IKTRrFS2" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_11" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-12 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/proxima"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/mitcon.png?itok=NdHQiLpS" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_12" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-13 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/sanaltragedy"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/sanaltragedy.png?itok=srLe8QGs" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_13" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-14 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/codemans"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/codemans.png?itok=bQ_baj_n" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_14" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-15 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/wmi"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/wmi.png?itok=x0yGJbqz" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_15" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-16 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/malum"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/malum.png?itok=i7rHc608" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_16" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-17 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/thingtelligence"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/thingtelligence.png?itok=-ppFqs-s" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_17" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-18 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/team-trio"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/teamtrio.png?itok=su4InQSx" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_18" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-19 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/cowboyz"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/cowboyz.png?itok=KhvEFkjz" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_19" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-20 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/visiondary"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/visiondary.png?itok=RxVLVdnT" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_20" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-21 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/pem"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/pem.png?itok=72NQagkk" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_21" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-22 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/arcadia"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/arcadia.png?itok=qC1RGCoz" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_22" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-23 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/takla"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/takla.png?itok=ENxj9U1E" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_23" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-24 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/team-rocket"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/teamrocket.png?itok=fgSp_B0n" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_24" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-25 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/nankatsu"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/nankatsu.png?itok=vro2gf-p" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_25" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-26 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/code-whisperers"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/codewhisperers.png?itok=Y2eOcY9N" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_26" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-27 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/deadliners"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/deadliners.png?itok=rUEn7SRD" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_27" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-28 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/smeshers"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/smeshers.png?itok=sXAtrx_7" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_28" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-29 views_slideshow_cycle_hidden views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/code-fellas"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/alicanogul.jpg?itok=KJa26mUA" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_29" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-30 views_slideshow_cycle_hidden views-row-even" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/flaming-swallow"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/flamingswallow.png?itok=eMT9ie1-" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+<div id="views_slideshow_cycle_div_senior_projects-default_1_30" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-31 views_slideshow_cycle_hidden views-row-last views-row-odd" >
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd">
+    
+          
+  <div class="field-image--">
+    <a href="/fixt"><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/system/files/styles/research_image/private/fixit.png?itok=lhGdM0lL" width="450" height="180" alt="" /></a>  </div>
+  </div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-views pane-calendar-2 panel-calendar"  >
+  
+        <h2 class="pane-title">
+      CALENDAR    </h2>
+    
+  
+  <div class="view view-calendar-2 view-id-calendar_2 view-display-id-page_1 view-dom-id-f4e26a755861d5a6513a355bf08f206d">
+            <div class="view-header">
+      <div class="date-nav-wrapper clearfix">
+  <div class="date-nav item-list">
+    <div class="date-heading">
+      <h3>February 2019</h3>
+    </div>
+    <ul class="pager">
+          <li class="date-prev">
+        <a href="https://ceng.metu.edu.tr/calendar-node-field-event-date-and-time/month/2019-01" title="Navigate to previous month" rel="nofollow">&laquo; Prev</a>      </li>
+              <li class="date-next">
+        <a href="https://ceng.metu.edu.tr/calendar-node-field-event-date-and-time/month/2019-03" title="Navigate to next month" rel="nofollow">Next &raquo;</a>      </li>
+        </ul>
+  </div>
+</div>
+    </div>
+  
+  
+  
+      <div class="view-content">
+      <div class="calendar-calendar"><div class="month-view">
+<table class="full">
+  <thead>
+    <tr>
+              <th class="days mon" id="Monday">
+          Mon        </th>
+              <th class="days tue" id="Tuesday">
+          Tue        </th>
+              <th class="days wed" id="Wednesday">
+          Wed        </th>
+              <th class="days thu" id="Thursday">
+          Thu        </th>
+              <th class="days fri" id="Friday">
+          Fri        </th>
+              <th class="days sat" id="Saturday">
+          Sat        </th>
+              <th class="days sun" id="Sunday">
+          Sun        </th>
+          </tr>
+  </thead>
+  <tbody>
+    <tr class="date-box">
+  <td id="calendar_2-2019-01-28-date-box" class="date-box past empty" colspan="1" rowspan="1" data-date="2019-01-28"  headers="Monday"  data-day-of-month="28" >
+  <div class="inner">
+    <div class="month day"> 28 </div>  </div>
+</td>
+<td id="calendar_2-2019-01-29-date-box" class="date-box past empty" colspan="1" rowspan="1" data-date="2019-01-29"  headers="Tuesday"  data-day-of-month="29" >
+  <div class="inner">
+    <div class="month day"> 29 </div>  </div>
+</td>
+<td id="calendar_2-2019-01-30-date-box" class="date-box past empty" colspan="1" rowspan="1" data-date="2019-01-30"  headers="Wednesday"  data-day-of-month="30" >
+  <div class="inner">
+    <div class="month day"> 30 </div>  </div>
+</td>
+<td id="calendar_2-2019-01-31-date-box" class="date-box past empty" colspan="1" rowspan="1" data-date="2019-01-31"  headers="Thursday"  data-day-of-month="31" >
+  <div class="inner">
+    <div class="month day"> 31 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-01-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-01"  headers="Friday"  data-day-of-month="1" >
+  <div class="inner">
+    <div class="month day"> 1 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-02-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-02"  headers="Saturday"  data-day-of-month="2" >
+  <div class="inner">
+    <div class="month day"> 2 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-03-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-03"  headers="Sunday"  data-day-of-month="3" >
+  <div class="inner">
+    <div class="month day"> 3 </div>  </div>
+</td>
+</tr>
+<tr class="single-day">
+  <td id="calendar_2-2019-01-28-0" class="single-day past empty" colspan="1" rowspan="1" data-date="2019-01-28"  headers="Monday"  data-day-of-month="28" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-01-29-0" class="single-day past empty" colspan="1" rowspan="1" data-date="2019-01-29"  headers="Tuesday"  data-day-of-month="29" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-01-30-0" class="single-day past empty" colspan="1" rowspan="1" data-date="2019-01-30"  headers="Wednesday"  data-day-of-month="30" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-01-31-0" class="single-day past empty" colspan="1" rowspan="1" data-date="2019-01-31"  headers="Thursday"  data-day-of-month="31" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-02-01-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-01"  headers="Friday"  data-day-of-month="1" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-02-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-02"  headers="Saturday"  data-day-of-month="2" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-03-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-03"  headers="Sunday"  data-day-of-month="3" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+</tr>
+<tr class="date-box">
+  <td id="calendar_2-2019-02-04-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-04"  headers="Monday"  data-day-of-month="4" >
+  <div class="inner">
+    <div class="month day"> 4 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-05-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-05"  headers="Tuesday"  data-day-of-month="5" >
+  <div class="inner">
+    <div class="month day"> 5 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-06-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-06"  headers="Wednesday"  data-day-of-month="6" >
+  <div class="inner">
+    <div class="month day"> 6 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-07-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-07"  headers="Thursday"  data-day-of-month="7" >
+  <div class="inner">
+    <div class="month day"> 7 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-08-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-08"  headers="Friday"  data-day-of-month="8" >
+  <div class="inner">
+    <div class="month day"> 8 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-09-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-09"  headers="Saturday"  data-day-of-month="9" >
+  <div class="inner">
+    <div class="month day"> 9 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-10-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-10"  headers="Sunday"  data-day-of-month="10" >
+  <div class="inner">
+    <div class="month day"> 10 </div>  </div>
+</td>
+</tr>
+<tr class="single-day">
+  <td id="calendar_2-2019-02-04-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-04"  headers="Monday"  data-day-of-month="4" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-05-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-05"  headers="Tuesday"  data-day-of-month="5" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-06-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-06"  headers="Wednesday"  data-day-of-month="6" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-07-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-07"  headers="Thursday"  data-day-of-month="7" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-08-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-08"  headers="Friday"  data-day-of-month="8" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-09-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-09"  headers="Saturday"  data-day-of-month="9" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-10-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-10"  headers="Sunday"  data-day-of-month="10" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+</tr>
+<tr class="date-box">
+  <td id="calendar_2-2019-02-11-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-11"  headers="Monday"  data-day-of-month="11" >
+  <div class="inner">
+    <div class="month day"> 11 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-12-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-12"  headers="Tuesday"  data-day-of-month="12" >
+  <div class="inner">
+    <div class="month day"> 12 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-13-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-13"  headers="Wednesday"  data-day-of-month="13" >
+  <div class="inner">
+    <div class="month day"> 13 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-14-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-14"  headers="Thursday"  data-day-of-month="14" >
+  <div class="inner">
+    <div class="month day"> 14 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-15-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-15"  headers="Friday"  data-day-of-month="15" >
+  <div class="inner">
+    <div class="month day"> 15 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-16-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-16"  headers="Saturday"  data-day-of-month="16" >
+  <div class="inner">
+    <div class="month day"> 16 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-17-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-17"  headers="Sunday"  data-day-of-month="17" >
+  <div class="inner">
+    <div class="month day"> 17 </div>  </div>
+</td>
+</tr>
+<tr class="single-day">
+  <td id="calendar_2-2019-02-11-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-11"  headers="Monday"  data-day-of-month="11" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-12-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-12"  headers="Tuesday"  data-day-of-month="12" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-13-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-13"  headers="Wednesday"  data-day-of-month="13" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-14-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-14"  headers="Thursday"  data-day-of-month="14" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-15-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-15"  headers="Friday"  data-day-of-month="15" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-16-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-16"  headers="Saturday"  data-day-of-month="16" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-17-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-17"  headers="Sunday"  data-day-of-month="17" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+</tr>
+<tr class="date-box">
+  <td id="calendar_2-2019-02-18-date-box" class="date-box past" colspan="1" rowspan="1" data-date="2019-02-18"  headers="Monday"  data-day-of-month="18" >
+  <div class="inner">
+    <div class="month day"> 18 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-19-date-box" class="date-box today" colspan="1" rowspan="1" data-date="2019-02-19"  headers="Tuesday"  data-day-of-month="19" >
+  <div class="inner">
+    <div class="month day"> 19 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-20-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-20"  headers="Wednesday"  data-day-of-month="20" >
+  <div class="inner">
+    <div class="month day"> 20 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-21-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-21"  headers="Thursday"  data-day-of-month="21" >
+  <div class="inner">
+    <div class="month day"> 21 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-22-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-22"  headers="Friday"  data-day-of-month="22" >
+  <div class="inner">
+    <div class="month day"> 22 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-23-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-23"  headers="Saturday"  data-day-of-month="23" >
+  <div class="inner">
+    <div class="month day"> 23 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-24-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-24"  headers="Sunday"  data-day-of-month="24" >
+  <div class="inner">
+    <div class="month day"> 24 </div>  </div>
+</td>
+</tr>
+<tr class="single-day">
+  <td id="calendar_2-2019-02-18-0" class="single-day no-entry past" colspan="1" rowspan="1" data-date="2019-02-18"  headers="Monday"  data-day-of-month="18" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-19-0" class="single-day no-entry today" colspan="1" rowspan="1" data-date="2019-02-19"  headers="Tuesday"  data-day-of-month="19" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-20-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-20"  headers="Wednesday"  data-day-of-month="20" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-21-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-21"  headers="Thursday"  data-day-of-month="21" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-22-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-22"  headers="Friday"  data-day-of-month="22" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-23-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-23"  headers="Saturday"  data-day-of-month="23" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-24-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-24"  headers="Sunday"  data-day-of-month="24" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+</tr>
+<tr class="date-box">
+  <td id="calendar_2-2019-02-25-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-25"  headers="Monday"  data-day-of-month="25" >
+  <div class="inner">
+    <div class="month day"> 25 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-26-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-26"  headers="Tuesday"  data-day-of-month="26" >
+  <div class="inner">
+    <div class="month day"> 26 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-27-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-27"  headers="Wednesday"  data-day-of-month="27" >
+  <div class="inner">
+    <div class="month day"> 27 </div>  </div>
+</td>
+<td id="calendar_2-2019-02-28-date-box" class="date-box future" colspan="1" rowspan="1" data-date="2019-02-28"  headers="Thursday"  data-day-of-month="28" >
+  <div class="inner">
+    <div class="month day"> 28 </div>  </div>
+</td>
+<td id="calendar_2-2019-03-01-date-box" class="date-box future empty" colspan="1" rowspan="1" data-date="2019-03-01"  headers="Friday"  data-day-of-month="1" >
+  <div class="inner">
+    <div class="month day"> 1 </div>  </div>
+</td>
+<td id="calendar_2-2019-03-02-date-box" class="date-box future empty" colspan="1" rowspan="1" data-date="2019-03-02"  headers="Saturday"  data-day-of-month="2" >
+  <div class="inner">
+    <div class="month day"> 2 </div>  </div>
+</td>
+<td id="calendar_2-2019-03-03-date-box" class="date-box future empty" colspan="1" rowspan="1" data-date="2019-03-03"  headers="Sunday"  data-day-of-month="3" >
+  <div class="inner">
+    <div class="month day"> 3 </div>  </div>
+</td>
+</tr>
+<tr class="single-day">
+  <td id="calendar_2-2019-02-25-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-25"  headers="Monday"  data-day-of-month="25" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-26-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-26"  headers="Tuesday"  data-day-of-month="26" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-27-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-27"  headers="Wednesday"  data-day-of-month="27" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-02-28-0" class="single-day no-entry future" colspan="1" rowspan="1" data-date="2019-02-28"  headers="Thursday"  data-day-of-month="28" >
+  <div class="inner">
+    &nbsp;  </div>
+</td>
+<td id="calendar_2-2019-03-01-0" class="single-day future empty" colspan="1" rowspan="1" data-date="2019-03-01"  headers="Friday"  data-day-of-month="1" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-03-02-0" class="single-day future empty" colspan="1" rowspan="1" data-date="2019-03-02"  headers="Saturday"  data-day-of-month="2" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+<td id="calendar_2-2019-03-03-0" class="single-day future empty" colspan="1" rowspan="1" data-date="2019-03-03"  headers="Sunday"  data-day-of-month="3" >
+  <div class="inner">
+    <div class="calendar-empty">&nbsp;</div>
+  </div>
+</td>
+</tr>
+  </tbody>
+</table>
+</div></div>
+<script>
+try {
+  // ie hack to make the single day row expand to available space
+  if ($.browser.msie ) {
+    var multiday_height = $('tr.multi-day')[0].clientHeight; // Height of a multi-day row
+    $('tr[iehint]').each(function(index) {
+      var iehint = this.getAttribute('iehint');
+      // Add height of the multi day rows to the single day row - seems that 80% height works best
+      var height = this.clientHeight + (multiday_height * .8 * iehint); 
+      this.style.height = height + 'px';
+    });
+  }
+}catch(e){
+  // swallow 
+}
+</script>    </div>
+  
+  
+  
+  
+  
+      <div class="feed-icon">
+      <a href='webcal://ceng.metu.edu.tr/calendar-node-field-event-date-and-time/ical/2019-02/calendar.ics' class='ical-icon'><img typeof="foaf:Image" src="https://ceng.metu.edu.tr/sites/all/modules/date_ical/images/ical-feed-icon-34x14.png" alt="Add to My Calendar" title="Add to My Calendar" /></a>    </div>
+  
+</div>
+  
+  </div>
+<div class="panel-pane pane-block pane-twitter-block-1"  >
+  
+        <h2 class="pane-title">
+      TWEETS    </h2>
+    
+  
+  <a href="https://twitter.com/odtu_bilg_muh" class="twitter-timeline" data-widget-id="732277117958934528" width="400" height="100" data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="2" data-aria-polite="polite">Tweets by odtu_bilg_muh</a>
+  
+  </div>
+   </div> 
+                 
+  <div class="footer-links">
+       
+        
+        
+     </div><!--end footer-links-->
+</div><!--end orta-bolum-->
+
+
+
+
+          </div><!-- /#content -->
+
+   
+
+    
+    
+  </div><!-- /#main -->
+
+    <footer id="footer" class="region region-footer">
+    <div id="block-menu-menu-social-i-cons" class="block block-menu first odd" role="navigation">
+
+      
+  <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://www.facebook.com/ODTU.Bilgisayar.Muhendisligi" class="menu__link facebook menu_icon menu-636" target="_blank">Facebook</a></li>
+<li class="menu__item is-leaf last leaf"><a href="https://twitter.com/odtu_bilg_muh" class="menu__link twitter menu_icon menu-678" target="_blank">Twitter</a></li>
+</ul>
+</div>
+<div id="block-block-1" class="block block-block last even">
+
+      
+  <div class="adress">
+<p>Orta Doğu Teknik Üniversitesi,  Üniversiteler Mahallesi,  Dumlupınar Bulvarı No:1 06800 Çankaya</p>
+</div>
+
+</div>
+  </footer>
+
+</div><!-- /#page -->
+
+
+  <script src="//platform.twitter.com/widgets.js"></script>
+  
+</div><!--end container-->
+</body>
+</html>
