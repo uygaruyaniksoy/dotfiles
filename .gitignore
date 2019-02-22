@@ -13,4 +13,5 @@
 !.config/ranger/rifle.conf
 !.surf
 .surf/cache
+.surf/cookies.txt
 

@@ -57,6 +57,7 @@ bindsym $mod+Shift+k	move up 30
 bindsym $mod+Shift+l	move right 30
 
 bindsym $mod+q			[con_id="__focused__" instance="^(?!math|dropdown).*$"] kill
+bindsym $mod+Shift+q	mode "$mode_system"
 
 bindsym $mod+w			exec urxvt -e calcurse
 bindsym $mod+Shift+w    exec feh ~/Pictures/uk-kbd-layout.png
@@ -139,7 +140,6 @@ for_window [title="feh.*uk-kbd-layout.png$"]    floating enable, resize set 557 
 
 bindsym $mod+F2		restart
 bindsym $mod+F3	    exec --no-startup-id  compton
-bindsym $mod+F4     mode "$mode_system"
 
 bindsym Print 		exec --no-startup-id "flameshot gui"
 
