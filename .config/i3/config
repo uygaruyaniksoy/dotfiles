@@ -13,6 +13,8 @@ exec --no-startup-id steam
 exec --no-startup-id nm-applet
 exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape"
 exec --no-startup-id xset r rate 200 40
+exec --no-startup-id xcape -e "Mode_switch=Escape"
+
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000

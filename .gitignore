@@ -14,4 +14,4 @@
 !.surf
 .surf/cache
 .surf/cookies.txt
-
+!.xmodmap
