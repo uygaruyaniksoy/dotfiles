@@ -11,10 +11,8 @@ exec --no-startup-id compton
 exec --no-startup-id redshift
 exec --no-startup-id steam
 exec --no-startup-id nm-applet
-exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape"
+# exec --no-startup-id /usr/bin/setxkbmap -option "caps:escape"
 exec --no-startup-id xset r rate 200 40
-exec --no-startup-id xcape -e "Mode_switch=Escape"
-
 
 # Set Xresources colors:
 set_from_resource $darkblack	color0  #000000
@@ -77,6 +75,8 @@ bindsym $mod+Shift+r	floating toggle; sticky toggle
 bindsym $mod+t			split toggle
 bindsym $mod+Shift+t	exec urxvt -e sh -c "tmux attach || tmux new"
 
+bindsym --whole-window $mod+button2          exec --no-startup-id cd "$(readlink /proc/`xprop -root | grep ACTIVE_WINDOW\(WINDOW\) | awk '{print $NF}' | xargs xprop -id | grep _PID | awk '{print $NF}' | xargs pstree -p | head -2 | tail -1 | grep -o  '[0-9]*' | head -1`/cwd)" && xclip -o | xargs xdg-open
+
 bindsym $mod+s 	        scratchpad show
 bindsym $mod+Shift+s 	move scratchpad
 
@@ -131,8 +131,6 @@ bindsym $mod+Shift+7	move container to workspace $ws7
 bindsym $mod+Shift+8	move container to workspace $ws8
 bindsym $mod+Shift+9	move container to workspace $ws9
 bindsym $mod+Shift+0	move container to workspace $ws10
-
-workspace 3 output DP-1-1
 
 for_window [title="^gcaladd$"]                  floating enable, resize set 625 400, border pixel 3
 for_window [title="^note$"]                     floating enable, resize set 625 400, border pixel 3

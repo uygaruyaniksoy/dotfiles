@@ -1,7 +1,4 @@
-while inotifywait --exclude ".*(log|pdf|aux|out)$" -e modify * > /dev/null 2>&1; do
-    pdflatex "$1.tex" > /dev/null 2>&1 
-    pgrep zathura > /dev/null 2>&1 || zathura "$1.pdf" & > /dev/null 2>&1
-done &
-vi "$1.tex"
-killall inotifywait
-exit
+#echo $1 | sed 's/tex/pdf/' | xargs zathura &
+#ZATHURA_PID=$!
+ls "$1" | entr /bin/sh -c "yes X | pdflatex $1 || exit 0"
+#kill -9 $ZATHURA_PID

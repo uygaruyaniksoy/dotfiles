@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--bg-fill' '/home/uygar/Pictures/wallpapers/Omega_Nebula.jpg' 
+'feh' '--bg-scale' '/home/uygar/Pictures/grub_wallpapers/black.png' 
