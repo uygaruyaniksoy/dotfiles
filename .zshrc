@@ -109,10 +109,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.profile ]; then
-    . ~/.profile
-fi
-
 if [ ! -n "$TMUX" ]; then
 #    tmux  
 fi
@@ -125,3 +121,5 @@ export BROWSER="chromium-browser"
 export TERMINAL="rxvt"
 export TERM="rxvt"
 
+
+export PATH="/home/uygar/Android/Sdk/platform-tools:/home/uygar/Android/Sdk/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.vim/bundle/vim-live-latex-preview/bin:/home/uygar/.scripts:/home/uygar/.vimpkg/bin"
