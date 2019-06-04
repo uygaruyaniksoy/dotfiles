@@ -1,9 +1,26 @@
 keycode 66 = Mode_switch
-keysym h = h H Left
-keysym l = l L Right
-keysym k = k K Up
-keysym j = j J Down
-keysym y = y Y Prior
-keysym u = u U Home
-keysym i = i I End
-keysym o = o O Next
+keycode 65 = space space Return
+
+keysym y = y Y Home
+keysym u = u U Next
+keysym i = i I Prior
+keysym o = o O End
+
+keycode  38 = a A a A 1
+keycode  39 = s S s S 2
+keycode  40 = d D d D 3
+keycode  41 = f F f F 4
+keycode  42 = g G g G 5
+keycode  43 = h H Left H 6
+keycode  44 = j J Down J 7
+keycode  45 = k K Up K 8 
+keycode  46 = l L Right L 9 
+
+keycode  56 = b B XF86Game B
+keycode  25 = w W XF86Shop W
+
+
+keysym n = n N BackSpace
+keysym m = m M Delete
+
+keycode  47 = semicolon colon semicolon colon 0

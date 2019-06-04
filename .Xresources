@@ -11,7 +11,7 @@ urxvt.letterSpace: -1
 urxvt.saveLines: 1000000
 !! transparency
 urxvt*transparent: true
-urxvt*shading: 15
+urxvt*shading: 5
 
 !! Perl extensions
 urxvt.perl-ext-common: default,matcher,font-size,keyboard-select
