@@ -1,0 +1,10 @@
+cd ~/.config/wall/
+rm *
+
+wget "http://picsum.photos/1920/1080?image=$(shuf -i1-1000 -n1)"
+#curl -O "https://cdn.spacetelescope.org/archives/images/screen/potw$(shuf -i1150-1850 -n1)a.jpg"
+
+#composite -dissolve 100 -gravity Center $(ls) -alpha Set wall.jpg
+
+#wal -i ~/.config/wall/wall.jpg && wal -R
+wal -i ~/.config/wall/* && wal -R

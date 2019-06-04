@@ -1,0 +1,5 @@
+WM="$(wmctrl -m | head -1 | awk '{ print $2 }')"
+if [ $WM = "i3" ]; then 
+    i3-msg move up 30
+fi
+
