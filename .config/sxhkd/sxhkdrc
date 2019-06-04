@@ -1,0 +1,55 @@
+super + Return
+    $TERMINAL
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# movement
+super + {h,j,k,l}
+    $HOME/.scripts/hotkeys/focus_{left,down,up,right}
+
+# window
+super + shift + {h,j,k,l}
+    $HOME/.scripts/hotkeys/window_move_{left,down,up,right}
+super + ctrl + shift + {h,j,k,l}
+    $HOME/.scripts/hotkeys/resize_{grow_horizontal,grow_vertical,shrink_vertical,shrink_horizontal}
+
+# workspace
+super + {1,2,3,4,5,6,7,8,9,0}
+    $HOME/.scripts/hotkeys/change_workspace {1,2,3,4,5,6,7,8,9,0}
+super + shift + {1,2,3,4,5,6,7,8,9,0}
+    $HOME/.scripts/hotkeys/move_to_workspace {1,2,3,4,5,6,7,8,9,0}
+
+super + y
+    xdotool click 1
+super + bracketleft
+    xdotool click 3
+super + u		    
+    xdotool mousemove_relative -- -25 0 
+super + i  		    
+    xdotool mousemove_relative -- 0 25 
+super + o   		
+    xdotool mousemove_relative -- 0 -25 
+super + p  		    
+    xdotool mousemove_relative -- 25 0 
+XF86Game
+    notify-send "he"
+XF86Shop
+    notify-send "he"
+Menu
+    notify-send "he"
+
+super + w
+    surf -m web.whatsapp.com
+super + shift + w
+    urxvt -e sh -c "tmux attach || tmux new"
+
+super + d
+    dmenu_run
+super + shift + d
+    $HOME/.scripts/.list_scripts.sh
+
+super + n
+     rofi -combi-modi window,drun -show combi -modi combi -theme Pop-Dark
+
