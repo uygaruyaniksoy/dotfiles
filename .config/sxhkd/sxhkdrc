@@ -37,8 +37,6 @@ XF86Game
     notify-send "he"
 XF86Shop
     notify-send "he"
-Menu
-    notify-send "he"
 
 super + w
     surf -m web.whatsapp.com
