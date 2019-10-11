@@ -51,3 +51,5 @@ super + shift + d
 super + n
      rofi -combi-modi window,drun -show combi -modi combi -theme Pop-Dark
 
+super + l
+     pkill -9 Discord; discord

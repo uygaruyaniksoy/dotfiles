@@ -77,7 +77,7 @@ set $ws10   "10"
 
 for_window [title="^gcaladd$"]                  floating enable, resize set 625 400, border pixel 3
 for_window [title="^note$"]                     floating enable, resize set 625 400, border pixel 3
-for_window [title="^tmux$"]                     floating enable, resize set 720 480, move position center, sticky enable
+for_window [title="^sh$"]                     floating enable, resize set 720 480, move position center, sticky enable
 for_window [title="feh.*uk-kbd-layout.png$"]    floating enable, resize set 557 195, move position 0 0 
 for_window [title=".*WhatsApp$" class="^Surf$"]  floating enable
 
@@ -95,8 +95,8 @@ bindsym XF86AudioNext		exec --no-startup-id dbus-send --print-reply --dest=org.m
 bindsym XF86AudioPlay		exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 bindsym XF86AudioPrev		exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous 
 bindsym XF86TouchpadToggle exec ~/.scripts/touchpad_toggle
-bindsym XF86MonBrightnessDown	exec --no-startup-id brightnessctl set 10%-
-bindsym XF86MonBrightnessUp	exec --no-startup-id brightnessctl set 10%+
+bindsym XF86MonBrightnessDown	exec --no-startup-id sudo brightnessctl set 10%-
+bindsym XF86MonBrightnessUp	exec --no-startup-id sudo brightnessctl set 10%+
 
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (p) shutdown
 mode "$mode_system" {
