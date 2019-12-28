@@ -12,3 +12,6 @@ xrandr --listmonitors |  awk '{ print $2 }' | sed 's/[+0-9]//' | grep '\bDP-1-1'
 sxhkd &
 xset r rate 200 40
 xset r 108 r on
+# mount other storage
+if [ ! -e "/media/$(whoami)/Steam" ]; then sudo mkdir "/media/$(whoami)/Steam"; fi
+sudo mount /dev/sda2 "/media/$(whoami)/Steam"
