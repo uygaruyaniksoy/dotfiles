@@ -1,0 +1,6 @@
+if [ `cat /sys/class/net/enp4s0f1/operstate` = 'up' ]; then
+    if ! nmcli con show | grep FreeWifi | grep wlp3s0; then 
+        sudo /usr/bin/notify-send 'creating hotspot'
+        sudo /home/uygar/.scripts/create_hotspot
+    fi
+fi

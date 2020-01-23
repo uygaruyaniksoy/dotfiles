@@ -1,0 +1,38 @@
+eu4 game - multiplayer
+10 questions
+ask user to locate a country
+
+ex: find hamburg
+    -- user needs to locate hamburg by panning and zooming
+    -- if answered correctly
+        -- award 2 pts
+        -- move to next question
+    -- else
+        -- freeze 5 sec and let him choose again
+            -- if answered correctly
+                -- award 1 pt
+            -- else
+                -- move to next question
+
+at the end the one with more pts win
+if pts are equal compare time
+
+at one time up to 10 people can play
+
+-- single player mode
+    user can play in single mode to locate as much countries as possible
+        if he fails 
+            he has the ability to watch an add for one time.
+
+firebase db
+firebase scoreboard
+
+
+
+
+game idea:
+existensial crisis
+story game
+character: junior technician
+you are in a space craft going to earth to seed the evolution of life on earth you plant trees send animals and finally send humans with erased memories unwillingly
+last shot reveal that you are flying from earth and you are the one actually that started life on earth

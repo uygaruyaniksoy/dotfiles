@@ -1,0 +1,9 @@
+if ! nmcli con show | grep FreeWifi; 
+then
+    nmcli con add type wifi ifname wlp3s0 con-name FreeWifi autoconnect yes ssid FreeWifi
+    nmcli con modify FreeWifi 802-11-wireless.mode ap 802-11-wireless.band bg ipv4.method shared
+    nmcli con modify FreeWifi wifi-sec.key-mgmt wpa-psk
+    nmcli con modify FreeWifi wifi-sec.psk "veryveryhardpassword1234"
+fi
+nmcli con up FreeWifi
+
