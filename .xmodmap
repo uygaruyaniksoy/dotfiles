@@ -6,6 +6,20 @@ keysym u = u U Next
 keysym i = i I Prior
 keysym o = o O End
 
+keycode  9 = Escape Escape grave asciitilde
+keycode  10 = 1 exclam F1
+keycode  11 = 2 at F2
+keycode  12 = 3 numbersign F3
+keycode  13 = 4 dollar F4
+keycode  14 = 5 percent F5
+keycode  15 = 6 asciicircum F6
+keycode  16 = 7 ampersand F7
+keycode  17 = 8 asterisk F8
+keycode  18 = 9 parenleft F9
+keycode  19 = 0 parenright F10
+keycode  20 = minus underscore F11
+keycode  21 = equal plus F12
+
 keycode  38 = a A a A 1
 keycode  39 = s S s S 2
 keycode  40 = d D d D 3
