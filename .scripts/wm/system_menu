@@ -1,0 +1,33 @@
+WM="$(wmctrl -m | head -1 | awk '{ print $2 }')"
+
+command=`echo '(r)eboot\n (l)ock\n (e)xit\n (s)uspend\n (h)ibernate\n (S)hutdown\n' | dmenu`
+
+case $command in 
+    \(l\)*)
+        bash ~/.scripts/lockscreen
+        ;;
+    \(e\)*)
+        case $WM in 
+            i3)
+                i3-msg exit
+                ;;
+            *)
+                ;;
+        esac
+        ;;
+    \(s\)*)
+        systemctl suspend
+        ;;
+    \(h\)*)
+        systemctl hibernate
+        ;;
+    \(r\)*)
+        systemctl reboot
+        ;;
+    \(S\)*)
+        systemctl poweroff
+        ;;
+    *)
+        ;;
+esac
+

@@ -4,25 +4,28 @@ super + Return
 super + ctrl + q
     xkill
 
-# make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+    $HOME/.scripts/load_keyboard_config
+
+# make sxhkd reload its configuration files:
+#super + Escape
+#    pkill -USR1 -x sxhkd
 
 # movement
 super + {h,j,k,l}
-    $HOME/.scripts/hotkeys/focus_{left,down,up,right}
+    $HOME/.scripts/wm/hotkeys/focus_{left,down,up,right}
 
 # window
 super + shift + {h,j,k,l}
-    $HOME/.scripts/hotkeys/window_move_{left,down,up,right}
+    $HOME/.scripts/wm/hotkeys/window_move_{left,down,up,right}
 super + ctrl + shift + {h,j,k,l}
-    $HOME/.scripts/hotkeys/resize_{grow_horizontal,grow_vertical,shrink_vertical,shrink_horizontal}
+    $HOME/.scripts/wm/hotkeys/resize_{grow_horizontal,grow_vertical,shrink_vertical,shrink_horizontal}
 
 # workspace
 super + {1,2,3,4,5,6,7,8,9,0}
-    $HOME/.scripts/hotkeys/change_workspace {1,2,3,4,5,6,7,8,9,0}
+    $HOME/.scripts/wm/hotkeys/change_workspace {1,2,3,4,5,6,7,8,9,0}
 super + shift + {1,2,3,4,5,6,7,8,9,0}
-    $HOME/.scripts/hotkeys/move_to_workspace {1,2,3,4,5,6,7,8,9,0}
+    $HOME/.scripts/wm/hotkeys/move_to_workspace {1,2,3,4,5,6,7,8,9,0}
 
 super + y
     xdotool click 1
@@ -36,10 +39,52 @@ super + o
     xdotool mousemove_relative -- 0 -25 
 super + p  		    
     xdotool mousemove_relative -- 25 0 
-XF86Game
-    notify-send "he"
-XF86Shop
-    notify-send "he"
+
+Print
+    flameshot gui
+
+XF86AudioMute       
+    amixer -D pulse set Master 1+ toggle 
+XF86AudioLowerVolume    
+    amixer set 'Master' 10%-
+XF86AudioRaiseVolume    
+    amixer set 'Master' 10%+
+XF86Calculator      
+    urxvt -e R -q
+XF86AudioNext       
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+XF86AudioPlay       
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+XF86AudioPrev       
+    dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+XF86TouchpadToggle 
+    ~/.scripts/touchpad_toggle
+
+XF86MonBrightnessDown   
+    sudo brightnessctl set 10%-
+XF86MonBrightnessUp 
+    sudo brightnessctl set 10%+
+
+super + F3     
+    pkill -9 compton || compton
+super + F2     
+    $HOME/.scripts/wm/restart_wm
+super + space
+    $HOME/.scripts/wm/toggle_focus_mode
+super + shift + space
+    $HOME/.scripts/wm/toggle_floating
+super + Tab
+    $HOME/.scripts/wm/back_and_forth
+super + q
+    $HOME/.scripts/wm/kill_window
+super + shift + q
+    $HOME/.scripts/wm/system_menu
+super + f
+    $HOME/.scripts/wm/fullscreen
+super + s
+    $HOME/.scripts/wm/scratchpad_toggle
+super + shift + s
+    $HOME/.scripts/wm/scratchpad_move
 
 super + w
     surf -m web.whatsapp.com
@@ -56,4 +101,17 @@ super + n
 
 super + l
      pkill -9 Discord || discord
+
+mode_switch + e
+    notify-send "he3"
+
+XF86Shop
+    notify-send "he3"
+
+mode_switch + w
+    xdotool keyup w key --clearmodifiers ctrl+Right
+mode_switch + b
+    xdotool keyup b key --clearmodifiers ctrl+Left
+mode_switch + space
+    xdotool keyup space key Return
 

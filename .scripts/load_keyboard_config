@@ -1,0 +1,14 @@
+setxkbmap -layout us -option lv3:caps_switch -variant intl
+
+pkill -9 xmodmap
+xmodmap ~/.xmodmap
+
+pkill -9 xcape
+xcape -e "Mode_switch=Escape"
+
+pkill -9 xset
+xset r rate 200 40
+xset r 108 r on
+
+pkill -9 sxhkd
+sxhkd &
