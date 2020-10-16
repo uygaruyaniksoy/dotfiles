@@ -111,28 +111,5 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ ! -n "$TMUX" ]; then
-#    tmux  
-fi
-
 wal -R > /dev/null
 
-export PATH=$PATH:$HOME/.scripts
-export EDITOR='vim'
-export BROWSER="chromium-browser"
-export TERMINAL="rxvt"
-export TERM="rxvt"
-
-export PATH="/home/uygar/Android/Sdk/platform-tools:/home/uygar/Android/Sdk/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.vim/bundle/vim-live-latex-preview/bin:/home/uygar/.scripts:/home/uygar/.vimpkg/bin"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/uygar/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/uygar/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/uygar/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/uygar/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
