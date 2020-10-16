@@ -55,6 +55,8 @@ image/x-xbitmap=feh.desktop
 image/x-xpixmap=feh.desktop
 zathura=xpdf.desktop
 x-scheme-handler/discord-402572971681644545=discord-402572971681644545.desktop
+x-scheme-handler/discord-523502837364424706=discord-523502837364424706.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 
 [Added Associations]
 application/vnd.oasis.opendocument.text=libreoffice-writer.desktop;

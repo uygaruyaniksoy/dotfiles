@@ -69,6 +69,7 @@ call vundle#end()            " required
 call plug#begin()
 
 Plug 'elmcast/elm-vim'
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
