@@ -150,7 +150,3 @@ PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/\~}\007"'
 
 
 export PATH="/home/uygar/Android/Sdk/platform-tools:/home/uygar/Android/Sdk/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.vim/bundle/vim-live-latex-preview/bin:/home/uygar/.scripts:/home/uygar/.vimpkg/bin"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

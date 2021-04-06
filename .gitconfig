@@ -3,3 +3,5 @@
 	name = Uygar Uyanıksoy
 [core]
 	autocrlf = input
+[credential]
+	helper = store

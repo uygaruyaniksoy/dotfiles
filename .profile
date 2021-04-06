@@ -21,17 +21,6 @@ function dcc() {
 if [ ! -e "/media/$(whoami)/Steam" ]; then sudo mkdir "/media/$(whoami)/Steam"; fi
 sudo mount /dev/sda2 "/media/$(whoami)/Steam"
 
-export PATH=$PATH:$HOME/.scripts
-export EDITOR='vim'
-export BROWSER="chromium-browser"
-export TERMINAL="rxvt-unicooe"
-export TERM="rxvt-unicode"
-
-export PATH="/home/uygar/Android/Sdk/platform-tools:/home/uygar/Android/Sdk/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/uygar/.vim/bundle/vim-live-latex-preview/bin:/home/uygar/.scripts:/home/uygar/.vimpkg/bin"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

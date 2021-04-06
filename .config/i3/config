@@ -38,6 +38,9 @@ bindsym $mod+Shift+r	floating toggle; sticky toggle
 bindsym $mod+t			split toggle
 bindsym $mod+shift+n  	focus parent
 
+bindsym $mod+g  	    gaps inner current set 0
+bindsym $mod+shift+g  	gaps inner current set 30
+
 set $ws1     "1"
 set $ws2     "2"
 set $ws3     "3"
