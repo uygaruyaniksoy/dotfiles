@@ -1,2 +1,2 @@
 # select script
-urxvt -e $( echo -n ~/.scripts/ && ls ~/.scripts | dmenu ) && exit
+$TERMINAL -x $( echo -n ~/.scripts/ && ls ~/.scripts | dmenu ) && exit

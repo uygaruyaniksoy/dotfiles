@@ -14,7 +14,7 @@ bindsym $mod+shift+t layout toggle split
 bindsym $mod+ctrl+t layout stacking
 bindsym $mod+Mod1+t layout tabbed
 
-bindsym $mod+shift+n  	focus parent
+bindsym $mod+u  	focus parent
 bindsym $mod+g  	    gaps inner current set 0
 bindsym $mod+shift+g  	gaps inner current set 30
 
@@ -95,12 +95,10 @@ bindsym $mod+Return exec xfce4-terminal
 # kill focused window
 bindsym $mod+q kill
 
-# exit-menu
 bindsym $mod+Shift+q exec ~/.config/i3/scripts/shutdown_menu -p rofi -c
-bindsym $mod+l exec ~/.config/i3/scripts/blur-lock.sh
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+F2 reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+F2 restart
@@ -109,10 +107,10 @@ bindsym $mod+F2 restart
 bindsym $mod+F1 exec xed ~/.config/i3/keybindings
 
 # split in horizontal orientation
-bindsym $mod+h split h
+#bindsym $mod+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+#bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -128,7 +126,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # open new empty workspace
-bindsym $mod+Mod1+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
+bindsym $mod+Mod1+Shift+n exec ~/.config/i3/scripts/$empty_workspace.sh
 
 ## Multimedia Keys
 
@@ -144,11 +142,6 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Redirect sound to headphones
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
-
-## App shortcuts
-bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+n exec /usr/bin/thunar
-bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 
 ##########################################
 # configuration for workspace behaviour: #
@@ -195,7 +188,7 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # Autostart apps as you like
 #exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id firefox https://github.com/endeavouros-team/endeavouros-i3wm-setup/blob/main/README.md
+exec --no-startup-id google-chrome
 #exec --no-startup-id sleep 3 && thunar
 
 # set floating (nontiling)for apps needing it
@@ -272,12 +265,12 @@ strip_workspace_numbers yes
 
 ## rofi bindings fancy application menu (two bindings F9/$mod+d)
 
-bindsym F9 exec rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 \
+bindsym $mod+n exec rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 \
                 -columns 2 -padding 30 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"
 
 ## rofi bindings for window menu (two bindings F10/$mod+t)
 
-bindsym F10 exec rofi -show window -display-window "Window : " -line-padding 4 \
+bindsym $mod+shift+n exec rofi -show window -display-window "Window : " -line-padding 4 \
                 -lines 10 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"
