@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 for_window [class="^.*"] border pixel 0
 set $mod Mod4
 floating_modifier $mod
@@ -9,9 +8,13 @@ bindsym $mod+Shift+e    layout toggle tabbed stacking
 bindsym $mod+r			bar mode toggle
 bindsym $mod+Shift+r	floating toggle; sticky toggle
 
+# change container layout (stacked, tabbed, toggle split)
 bindsym $mod+t			split toggle
-bindsym $mod+shift+n  	focus parent
+bindsym $mod+shift+t layout toggle split
+bindsym $mod+ctrl+t layout stacking
+bindsym $mod+Mod1+t layout tabbed
 
+bindsym $mod+shift+n  	focus parent
 bindsym $mod+g  	    gaps inner current set 0
 bindsym $mod+shift+g  	gaps inner current set 30
 
@@ -71,7 +74,7 @@ bindsym $mod+6    workspace  $ws6
 bindsym $mod+7    workspace  $ws7
 bindsym $mod+8    workspace  $ws8
 bindsym $mod+9    workspace  $ws9
-bindsym $mod+10    workspace  $ws10
+bindsym $mod+0    workspace  $ws10
 
 # move focused container to workspace
 bindsym $mod+Shift+1    move container to workspace  $ws1
@@ -93,14 +96,14 @@ bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+q kill
 
 # exit-menu
-bindsym $mod+Shift+e exec ~/.config/i3/scripts/shutdown_menu -p rofi -c
+bindsym $mod+Shift+q exec ~/.config/i3/scripts/shutdown_menu -p rofi -c
 bindsym $mod+l exec ~/.config/i3/scripts/blur-lock.sh
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $mod+F2 restart
 
 # keybinding list in editor:
 bindsym $mod+F1 exec xed ~/.config/i3/keybindings
@@ -114,10 +117,6 @@ bindsym $mod+v split v
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
-# change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+g layout tabbed
-bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -129,7 +128,7 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # open new empty workspace
-bindsym $mod+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
+bindsym $mod+Mod1+Shift+n exec ~/.config/i3/scripts/empty_workspace.sh
 
 ## Multimedia Keys
 
@@ -154,19 +153,6 @@ bindsym Print exec "scrot ~/%Y-%m-%d-%T-screenshot.png"
 ##########################################
 # configuration for workspace behaviour: #
 ##########################################
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
 
 #get auth work with polkit-gnome
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
