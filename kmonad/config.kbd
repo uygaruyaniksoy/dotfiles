@@ -1,0 +1,522 @@
+(defcfg
+  input  (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+  output (uinput-sink "My KMonad output"
+    ;; To understand the importance of the following line, see the section on
+    ;; Compose-key sequences at the near-bottom of this file.
+    "/bin/sleep 1 && /usr/bin/setxkbmap -option compose:ralt")
+
+  fallthrough true
+  allow-cmd true
+)
+
+
+#| --------------------------------------------------------------------------
+                         Necessary: the `defsrc` block
+
+  It is difficult to explain the `defsrc` block without immediately going into
+  `deflayer` blocks as well. Essentially, KMonad maps input-events to various
+  internal actions, many of which generate output events. The `defsrc` block
+  explains the layout on which we specify our `deflayer`s down the line.
+
+  It is important to realize that the `defsrc` block doesn't *necessarily* have
+  to coincide with your actual input keyboard. You can specify a full 100%
+  `defsrc` block, but only use a 40% keyboard. This will mean that every
+  `deflayer` you specify will also have to match your 100% `defsrc`, and that
+  your actual keyboard would be physically unable to trigger about 60% of your
+  keymap, but it would be perfectly valid syntax.
+
+  The dual of this (and more useful) is that it is also perfectly valid to only
+  specify that part of your keyboard in `defsrc` that you want to remap. If you
+  use a 100% keyboard, but don't want to remap the numpad at all you can simply
+  leave the numpad out of your `defsrc`, and it should work just fine. In that
+  particular case you probably want to set `fallthrough` to `true` in your
+  `defcfg` block though.
+
+  In the future we would like to provide support for multiple, named `defsrc`
+  blocks, so that it becomes easier to specify various layers for just the
+  numpad, for example, but at the moment any more or less than 1 `defsrc` block
+  will result in an error.
+
+  The layouting in the `defsrc` block is completely free, whitespace simply gets
+  ignored. We strive to provide a name for every keycode that is no longer than
+  4 characters, so we find that laying out your keymap in columns of 5 works out
+  quite nicely (although wider columns will allow for more informative aliases,
+  see below).
+
+  Most keycodes should be obvious. If you are unsure, check
+  './src/KMonad/Keyboard/Keycode.hs'. Every Keycode has a name corresponding to
+  its Keycode name, but all lower-case and with the 'Key' prefix removed. There
+  are also various aliases for Keycodes starting around line 350. If you are
+  trying to bind a key and there is not a 4-letter alias, please file an issue,
+  or better yet, a pull-request, and it will be added promptly.
+
+  Also, you can consult './keymap/template/' for various input templates to use
+  directly or to look up keycodes by position. Here we use the input-template
+  for 'us_ansi_60.kbd'
+
+  -------------------------------------------------------------------------- |#
+
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet cmp  rctl
+)
+
+
+#| --------------------------------------------------------------------------
+                        Optional : `defalias` statements
+
+  KMonad will let you specify some very specific, crazy buttons. These
+  definitions can get pretty long, though, and would make `deflayer` blocks
+  nearly impossible to read. Therefore we provide the ability to alias names to
+  these buttons, to keep the actual `deflayer` statements orderly.
+
+  A `defalias` can contain any number of aliases, and it can refer backwards or
+  forwards to layers without issue. The only sequencing that needs to be kept in
+  mind is that a `defalias` cannot refer forward to another `defalias` that is
+  not yet defined.
+
+  Here we define a few aliases, but we will define more later. Notice that we
+  try to only use 3 letter names for aliases. If that is not enough to be clear,
+  consider widening all columns to 6 or 7 characters (or be content with a messy
+  config).
+
+  -------------------------------------------------------------------------- |#
+
+(defalias
+  sym (tap-hold-next-release 1000 (layer-add symbols) (layer-toggle symbols))
+  qwe (layer-rem symbols)
+  esx (tap-hold-next-release 1000 esc (layer-toggle nav))
+  kil  C-A-del
+)
+
+
+#| NOTE: The above code could just as easily have been written as:
+(defalias num (layer-toggle numbers))
+(defalias kil C-A-del)
+|#
+
+
+#| --------------------------------------------------------------------------
+                     Necessary: at least 1 `deflayer` block
+
+  As explained in the `defsrc` section, a `deflayer` will define a button for
+  each corresponding entry in the `defsrc` definition. A `deflayer` statement
+  consists of the `deflayer` keyword, followed by the name used to identify this
+  layer, followed by N 'statements-that-evaluate-to-a-button', where N is
+  exactly how many entries are defined in the `defsrc` statement.
+
+  It is also important to mention that the 'keymap' in KMonad is modelled as a
+  stack of layers (just like in QMK). When an event is registered we look in the
+  top-most layer for a handler. If we don't find one we try the next layer, and
+  then the next.
+
+  Exactly what 'evaluates-to-a-button' will be expanded on in more detail below.
+  There are very many different specialist buttons in KMonad that we will touch
+  upon. However, for now, these 4 are a good place to begin:
+
+  1. Any keycode evaluates to a button that, on press, emits the press of that
+     keycode, and on release, emits the release of that keycode. Just a 'normal'
+     button. The exception is '\', which gets used as an escape character. Use
+     '\\' instead. Other characters that need to be escaped to match the literal
+     character are '(', ')', and '_'.
+
+  2. An @-prefixed name evaluates to an alias lookup. We named two buttons in
+     the `defalias` block above, we could now refer to these buttons using
+     `@num` and `@kil`. This is also why we only use alias-names no longer than
+     3 characters in this tutorial. Also, note that we are already referencing
+     some aliases that have not yet been defined, this is not an issue.
+
+  3. The '_' character evaluates to transparent. I.e. no handler for that
+     key-event in this layer, causing this event to be handed down the layer
+     stack to perhaps be handled by the next layer.
+
+  4. The 'XX' character evaluates to blocked. I.e. no action bound to that
+     key-event in this layer, but do actually catch event, preventing any
+     underlying layer from handling it.
+
+  Finally, it is important to note that the *first* `deflayer` statement in a
+  KMonad config will be the layer that is active when KMonad starts up.
+
+  -------------------------------------------------------------------------- |#
+
+
+(deflayer qwerty
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @esx @sa  @ss  @sd  @sf  g    h    @sj  @sk  @sl  @s;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet @sym           spc            @sym rmet / /
+)
+
+(defalias
+  sf (tap-hold-next-release 1000 f lctl)
+  sd (tap-hold-next-release 1000 d lsft)
+  ss (tap-hold-next-release 1000 s lmet)
+  sa (tap-hold-next-release 1000 a lalt)
+
+  sj (tap-hold-next-release 1000 j lctl)
+  sk (tap-hold-next-release 1000 k lsft)
+  sl (tap-hold-next-release 1000 l lmet)
+  s; (tap-hold-next-release 1000 ; lalt)
+)
+
+(deflayer symbols
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    @    !    \\   -    ~    '    S-'  `    _    _    _
+  _    ^    %    #    $    |    \_   [    \(   \)   ]    _    _
+  _    _    _    _    *    +    =    {    <    >    }    _
+  _    _    @qwe           _              @qwe _    _    _
+)
+
+(deflayer nav
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    tab  vold volu _    _    _    _    _    prnt _    _    _
+  _    _    _    _    _    _    left down up   right ret   _    _
+  _    _    _    _    _    _    bspc del  _    _    _    _
+  _    _    _              _              _    _    _    _
+)
+
+
+#| --------------------------------------------------------------------------
+                          Optional: modded buttons
+
+  Let's start by exploring the various special buttons that are supported by
+  KMonad by looking at 'modded' buttons, that is to say, buttons that activate
+  some kind of 'mod', then perform some button, and finally release that 'mod'
+  again.
+
+  We have already seen an example of this style of button, our `kil` button is
+  one such button. Let's look at it in more detail:
+    C-A-del
+
+  This looks like a simple declarative statement, but it's helpful to realize
+  that is simply syntactic sugar around 2 function calls. This statement is
+  equivalent to:
+    (around ctl (around alt del))
+
+  This highlights a core design principle in KMonad: we try to provide very
+  simple buttons, and then we provide rules and functions for combining them
+  into new buttons. Although note: still very much a work in progress.
+
+  So, looking at this statement:
+    (around foo bar)
+
+  Here, `around` is a function that takes two buttons and creates a new button.
+  This new button will, on a press, first press foo, then press bar, and on a
+  release first release bar, and then foo. Once created, this new button can be
+  passed to anything in KMonad that expects a button.
+
+  We have already seen other examples of modded buttons, \(, \), *, and +. There
+  are no Keycodes for these buttons in KMonad, but they are buttons. They simply
+  evaluate to `(around lsft x)`. All shifted numbers have their corresponding
+  characters, the same is true for all capitals, and < > : ~ " | { } \_ + and ?.
+
+  To wrap up 'modded-buttons', let's look back at C-A-del. We have 8 variants:
+  C- : (around lctl X)
+  A- : (around lalt X)
+  M- : (around lmet X)
+  S- : (around lsft X)
+
+  Then RC-, RA-, RM-, and RS- behave exactly the same, except using the
+  right-modifier.
+
+  These can be combined however you please:
+    C-A-M-S-x          ;; Perfectly valid
+    C-%                ;; Perfectly valid: same as C-S-5
+    C-RC-RA-A-M-S-RS-m ;; Sure, but why would you?
+
+  Also, note that although we provide special syntax for certain modifiers,
+  these buttons are in no way 'special' in KMonad. There is no concept of 'modifier'.  (around a (around b c)) ;; Perfectly valid
+
+  -------------------------------------------------------------------------- |#
+
+(defalias
+
+  ;; Something useful
+  cpy C-c
+  pst C-v
+  cut C-x
+
+  ;; Something silly
+  md1 (around a (around b c))    ;; abc
+  md2 (around a (around lsft b)) ;; aB
+  md3 C-A-M-S-l
+  md4 (around % b)               ;; BEWARE: %B, not %b, do you see why?
+)
+
+#| --------------------------------------------------------------------------
+                          Optional: layer manipulation
+
+  You have already seen the basics of layer-manipulation. The `layer-toggle`
+  button. This button adds a layer to the top of KMonad's layer stack when
+  pressed, and removes it again when released. There are a number of other ways
+  to manipulate the layer stack, some safer than others. Let's go through all of
+  them from safest to least safe:
+
+  `layer-toggle` works as described before, 2 things to note:
+  1. If you are confused or worried about pressing a key, changing layers, and
+     then releasing a key and this causing issues: don't be. KMonad handles
+     presses and releases in very different ways. Presses get passed directly to
+     the stacked keymap as previously described. When a KMonad button has its
+     press-action triggered, it then registers a callback that will catch its
+     own release before we ever touch the keymap. This guarantees that the
+     button triggered by the press of X *will be* the button whose release is
+     triggered by the release of X (the release of X might trigger other things
+     as well, but that is besides the point.)
+  2. If `layer-toggle` can only ever add and then necessarily remove 1 layer
+     from the stack, then it will never cause a permanent change, and is
+     perfectly safe.
+
+  `layer-delay`, once pressed, temporarily switches to some layer for some
+  milliseconds. Just like `layer-toggle` this will never permanently mess-up the
+  layer stack. This button was initially implemented to provide some
+  'leader-key' style behavior. Although I think in the future better solutions
+  will be available. For now this will temporarily add a layer to the top of the
+  stack:
+    (layer-delay 500 my-layer)
+
+  `layer-next`, once pressed, primes KMonad to handle the next press from some
+  arbitrary layer. This aims to fill the same usecase as `layer-delay`: the
+  beginnings of 'leader-key' style behavior. I think this whole button will get
+  deleted soon, because the more general `around-next` now exists (see below)
+  and this is nothing more than:
+    ;; (around-next (layer-toggle layer-name) some-button)
+  Until then though, use `layer-next` like this:
+    (layer-next layer-name)
+
+  `layer-switch`: change the base-layer of KMonad. As described at the top of
+  this document, the first `deflayer` statement is the layer that is active when
+  KMonad starts. Since `layer-toggle` can only ever add on and remove from the
+  top of that, it can never change the base-layer. The following button will
+  unregister the bottom-most layer of the keymap, and replace it with another
+  layer.
+    (layer-switch my-layer)
+
+  This is where things start getting potentially dangerous (i.e. get KMonad into
+  an unusuable state until a restart has occured). It is perfectly possible to
+  switch into a layer that you can never get out of. Or worse, you could
+  theoretically have a layer full of only `XX`s and switch into that, rendering
+  your keyboard unuseable until you somehow manage to kill KMonad (without using
+  your keyboard).
+
+  However, when handled well, `layer-switch` is very useful, letting you switch
+  between 'modes' for your keyboard. I have a tiny keyboard with a weird keymap,
+  but I switch into a simple 'qwerty' keymap shifted 1 button to the right for
+  gaming. Just make sure that any 'mode' you switch into has a button that
+  allows you to switch back out of the 'mode' (or content yourself restarting
+  KMonad somehow).
+
+  `layer-add` and `layer-rem`. This is where you can very quickly cause yourself
+  a big headache. Originally I didn't expose these operations, but someone
+  wanted to use them, and I am not one to deny someone else a chainsaw. As the
+  names might give away:
+    (layer-add name) ;; Add a layer to the top of the stack
+    (layer-rem name) ;; Remove a layer by name (noop if no such layer)
+
+  To use `layer-add` and `layer-rem` well, you should take a moment to think
+  about how to create a layout that will prevent you from getting into
+  situations where you enter a key-configuration you cannot get out of again.
+  These two operations together, however, are very useful for activating a
+  permanent overlay for a while. This technique is illustrated in the tap-hold
+  overlay a bit further down.
+
+
+  -------------------------------------------------------------------------- |#
+
+(defalias
+
+
+  ld1 (layer-delay 500 symbols) ;; One way to get a leader-key
+  ld2 (layer-next symbols)      ;; Another way to get a leader key
+
+  ;; NOTE, this is safe because both `qwerty` and `colemak` contain the `@tst`
+  ;; button which will get us to the `layer-test` layer, which itself contains
+  ;; both `@qwe` and `@col`.
+)
+
+;;(deflayer layer-test
+;;  @qwe _    _    _    _    _    _    _    _    _    _    @add _    @nah
+;;  @col _    _    _    _    _    _    _    _    _    _    _    _    @yah
+;;  _    _    _    _    _    _    _    _    _    _    _    _    _
+;;  _    _    _    _    _    _    _    _    _    @ld1 @ld2 _
+;;  _    _    _              _              _    _    _    _
+;;)
+
+;; One way to safely use layer-add and layer-rem: the button bound to layer-add
+;; is the same button bound to layer-rem in the layer that `add` adds to the
+;; stack. I.e., it becomes impossible to add or remove multiple copies of a
+;; layer.
+;;(defalias
+;;  add (layer-add multi-overlay) ;; multi-overlay is defined in the next
+;;  rem (layer-rem multi-overlay) ;; section below this
+;;  )
+
+#| --------------------------------------------------------------------------
+                          Optional: Multi-use buttons
+
+  Perhaps one of the most useful features of KMonad, where a lot of work has
+  gone into, but also an area with many buttons that are ever so slightly
+  different. The naming and structuring of these buttons might change sometime
+  soon, but for now, this is what there is.
+
+  For the next section being able to talk about examples is going to be handy,
+  so consider the following scenario and mini-language that will be the same
+  between scenarios.
+    - We have some button `foo` that will be different between scenarios
+    - `foo` is bound to 'Esc' on the input keyboard
+    - the letters a s d f are bound to themselves
+    - Px  signifies the press of button x on the keyboard
+    - Rx  signifies the release of said button
+    - Tx  signifies the sequential and near instantaneous press and release of x
+    - 100 signifies 100ms pass
+
+  So for example:
+    Tesc Ta:
+      tap of 'Esc' (triggering `foo`), tap of 'a' triggering `a`
+    Pesc 100 Ta Tb Resc:
+      press of 'Esc', 100ms pause, tap of 'a', tap of 'b', release of 'Esc'
+
+  The `tap-next` button takes 2 buttons, one for tapping, one for holding, and
+  combines them into a single button. When pressed, if the next event is its own
+  release, we tap the 'tapping' button. In all other cases we first press the
+  'holding' button then we handle the event. Then when the `tap-next` gets
+  released, we release the 'holding' button.
+
+  So, using our mini-language, we set foo to:
+    (tap-next x lsft)
+  Then:
+    Tesc            -> x
+    Tesc Ta         -> xa
+    Pesc Ta Resc    -> A
+    Pesc Ta Tr Resc -> AR
+
+  The `tap-hold` button is very similar to `tap-next` (a theme, trust me). The
+  difference lies in how the decision is made whether to tap or hold. A
+  `tap-hold` waits for a particular timeout, if the `tap-hold` is released
+  anywhere before that moment we execute a tap immediately. If the timeout
+  occurs and the `tap-hold` is still held, we switch to holding mode.
+
+  The additional feature of a `tap-hold` is that it pauses event-processing
+  until it makes its decision and then rolls back processing when the decision
+  has been made.
+
+  So, again with the mini-language, we set foo to:
+    (tap-hold 200 x lsft) ;; Like tap-next, but with a 200ms timeout
+  Then:
+    Tesc            -> x
+    Tesc Ta         -> xa
+    Pesc 300 a      -> A (the moment you press a)
+    Pesc a 300      -> A (after 200 ms)
+    Pesc a 100 Resc -> xa (both happening immediately on Resc)
+
+  The `tap-hold-next` button is a combination of the previous 2. Essentially,
+  think of it as a `tap-next` button, but it also switches to held after a
+  period of time. This is useful, because if you have a (tap-next ret ctl) for
+  example, and you press it thinking you want to press C-v, but then you change
+  your mind, you now cannot release the button without triggering a 'ret', that
+  you then have to backspace. With the `tap-hold-next` button, you simply
+  outwait the delay, and you're good. I see no benefit of `tap-next` over
+  `tap-hold-next` with a decent timeout value.
+
+  You can use the `:timeout-button` keyword to specify a button other than the
+  hold button which should be held when the timeout expires. For example, we
+  can construct a button which types one x when tapped, multiple x's when held,
+  and yet still acts as shift when another button is pressed before the timeout
+  expires. So, using the minilanguage and foo as:
+    (tap-hold-next 200 x lsft :timeout-button x)
+  Then:
+    Tesc           -> Tx
+    Pesc 100 a     -> A (the moment you press a)
+    Pesc 5000 Resc -> xxxxxxx (some number of auto-repeated x's)
+
+  Note that KMonad does not itself auto-repeat the key. In this last example,
+  KMonad emits 200 Px 4800 Rx, and the operating system's auto-repeat feature,
+  if any, emits multiple x's because it sees that the x key is held for 4800 ms.
+
+  The `tap-next-release` is like `tap-next`, except it decides whether to tap or
+  hold based on the next release of a key that was *not* pressed before us. This
+  also performs rollback like `tap-hold`. So, using the minilanguage and foo as:
+    (tap-next-release x lsft)
+  Then:
+    Tesc Ta         -> xa
+    Pa Pesc Ra Resc -> ax (because 'a' was already pressed when we started, so
+                           foo decides it is tapping)
+    Pesc Ta Resc    -> A (because a was pressed *and* released after we started,
+                          so foo decides it is holding)
+
+  These increasingly stranger buttons are, I think, coming from the stubborn
+  drive of some of my more eccentric (and I mean that in the most positive way)
+  users to make typing with modifiers on the home-row more comfortable.
+  Especially layouts that encourage a lot of rolling motions are nicer to use
+  with the `release` style buttons.
+
+  The `tap-hold-next-release` (notice a trend?) is just like `tap-next-release`,
+  but it comes with an additional timeout that, just like `tap-hold-next` will
+  jump into holding-mode after a timeout.
+
+  I honestly think that `tap-hold-next-release`, although it seems the most
+  complicated, probably is the most comfortable to use. But I've put all of them
+  in a testing layer down below, so give them a go and see what is nice.
+
+  -------------------------------------------------------------------------- |#
+
+
+(defalias
+  xtn (tap-next x lsft)         ;; Shift that does 'x' on tap
+  xth (tap-hold 400 x lsft)     ;; Long delay for easier testing
+  thn (tap-hold-next 400 x lsft)
+  tnr (tap-next-release x lsft)
+  tnh (tap-hold-next-release 2000 x lsft)
+
+  ;; Used it the colemak layer
+  xcp (tap-hold-next 400 esc ctl)
+)
+
+;; Some of the buttons used here are defined in the next section
+;; (deflayer multi-overlay
+;;   @mt  _    _    _    _    _    _    _    _    _    _    _    @rem _
+;;   _    _    _    _    _    _    _    _    _    _    _    _    _    _
+;;   @thn _    _    _    _    _    _    _    _    _    _    _    _
+;;   @xtn _    _    _    _    _    _    _    _    _    _    @xth
+;;   @tnr _    _              _              _    _    _    @tnh
+;; )
+
+#| --------------------------------------------------------------------------
+                        Optional: Command buttons
+
+  Currently we also provide the ability to launch arbitrary shell-commands from
+  inside kmonad. These commands are simply handed off to the command-shell
+  without any further checking or waiting.
+
+  NOTE: currently only tested on Linux, but should work on any platform, as long
+  as the command is valid for that platform.
+
+  The `cmd-button' function takes two arguments, the second one of which is
+  optional. These represent the commands to be executed on pressing and
+  releasing the button respectively.
+
+  BEWARE: never run anyone's configuration without looking at it. You wouldn't
+  want to push:
+
+    (cmd-button "rm -rf ~/*") ;; Delete all this user's data
+
+
+  -------------------------------------------------------------------------- |#
+
+(defalias
+  dat (cmd-button "date >> /tmp/kmonad_example.txt")   ;; Append date to tmpfile
+  pth (cmd-button "echo $PATH > /tmp/kmonad_path.txt") ;; Write out PATH
+  ;; `dat' on press and `pth' on release
+  bth (cmd-button "date >> /tmp/kmonad_example.txt; echo $PATH > /tmp/kmonad_path.txt")
+)
+
+(deflayer command-test
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    @dat @pth _
+  _    _    _              _              _    _    _    _
+)
