@@ -146,17 +146,20 @@
 (deflayer qwerty
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
-  @esx @sa  @ss  @sd  @sf  g    h    @sj  @sk  @sl  @s;    '    ret
+  @esx @sa  @ss  @sd  @sf  @sg  @sh  @sj  @sk  @sl  @s;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
   lctl lmet @sym           spc            @sym rmet / /
 )
 
 (defalias
+
+  sg (tap-hold-next-release 1000 g (layer-toggle nav))
   sf (tap-hold-next-release 1000 f lctl)
   sd (tap-hold-next-release 1000 d lsft)
   ss (tap-hold-next-release 1000 s lmet)
   sa (tap-hold-next-release 1000 a lalt)
 
+  sh (tap-hold-next-release 1000 h (layer-toggle nav))
   sj (tap-hold-next-release 1000 j lctl)
   sk (tap-hold-next-release 1000 k lsft)
   sl (tap-hold-next-release 1000 l lmet)
