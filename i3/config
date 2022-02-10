@@ -4,30 +4,6 @@ gaps outer 0
 set $mod Mod4
 floating_modifier $mod
 
-# Set Xresources colors:
-set_from_resource $darkblack	color0  #000000
-set_from_resource $black	    color8  #000000
-set_from_resource $red		    color3  #dd0000
-set_from_resource $white	    color15 #dddddd
-
-client.focused $red $red $darkblack $red $red
-client.focused_inactive $black $darkblack $red $black $black
-client.unfocused #2C2C2C #2C2C2C #ffffff #2C2C2C
-
-bar {
-	font pango:DejaVu Sans Mono, FontAwesome 8
-	colors {
-			background $darkblack
-			statusline $white
-			focused_workspace  $red $red $darkblack
-			inactive_workspace $darkblack $darkblack $white
-	}
-    tray_output eDP-1-1
-	position top
-	mode dock
-	modifier None
-}
-
 exec_always --no-startup-id killall -9 sxhkd picom nm-applet redshift
 exec_always --no-startup-id sleep 0.1; sxhkd
 exec_always --no-startup-id sleep 0.1; picom
@@ -40,13 +16,10 @@ exec_always --no-startup-id sleep 0.1; sh $HOME/.config/polybar/launch.sh
 bindsym $mod+e          layout default
 bindsym $mod+Shift+e    layout toggle tabbed stacking
 
-bindsym $mod+r			bar mode toggle
-bindsym $mod+Shift+r	floating toggle; sticky toggle
-
-bindsym $mod+t			split toggle
+bindsym $mod+t		split toggle
 bindsym $mod+shift+u  	focus parent
 
-bindsym $mod+g  	    gaps inner current set 0
+bindsym $mod+g      	gaps inner current set 0
 bindsym $mod+shift+g  	gaps inner current set 30
 
 set $ws1     "1"
@@ -59,9 +32,3 @@ set $ws7     "7"
 set $ws8     "8"
 set $ws9     "9"
 set $ws10   "10"
-
-for_window [title="^gcaladd$"]                  floating enable, resize set 625 400, border pixel 3
-for_window [title="^note$"]                     floating enable, resize set 625 400, border pixel 3
-for_window [title="^sh$"]                     floating enable, resize set 720 480, move position center, sticky enable
-for_window [title="feh.*uk-kbd-layout.png$"]    floating enable, resize set 557 195, move position 0 0 
-for_window [title=".*WhatsApp$" class="^Surf$"]  floating enable
