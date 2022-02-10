@@ -1,20 +1,13 @@
 ROOT="$(dirname "$(readlink -fm "$0")")"
 
-# remove old links
-rm -rf 				\
-	~/.config/i3 		\
-	~/.config/sxhkd     	\
-	~/.config/polybar 	\
-	~/.config/kitty     	\
-	~/.config/zsh     	\
-	~/.scripts
-
 # config
-ln -s $ROOT/i3 ~/.config/i3
-ln -s $ROOT/sxhkd ~/.config/sxhkd
-ln -s $ROOT/polybar ~/.config/polybar
-ln -s $ROOT/kitty ~/.config/kitty
-ln -s $ROOT/zsh ~/.config/zsh
+CONFIGS=( i3 sxhkd polybar kitty zsh )
+for c in "${CONFIGS[@]}"
+do
+	rm -rf $CONFIG/$c
+	ln -s $ROOT/$c $CONFIG/$c
+done
 
 # scripts
-ln -s $ROOT/scripts ~/.scripts
+rm -rf $HOME/.scripts
+ln -s $ROOT/scripts $HOME/.scripts
