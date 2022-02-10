@@ -28,6 +28,8 @@ bar {
 	modifier None
 }
 
+exec_always --no-startup-id sxhkd
+
 #Polybar
 exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id sh $HOME/.scripts/headset_audio.sh
