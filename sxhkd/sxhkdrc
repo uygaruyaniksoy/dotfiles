@@ -66,7 +66,7 @@ XF86MonBrightnessUp
     sudo brightnessctl set 10%+
 
 super + F3     
-    pkill -9 compton || compton
+    pkill -9 picom || picom
 super + F2     
     $HOME/.scripts/wm/restart_wm
 super + space

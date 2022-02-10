@@ -1,7 +1,7 @@
 ROOT="$(dirname "$(readlink -fm "$0")")"
 
 # config
-CONFIGS=( i3 sxhkd polybar kitty zsh )
+CONFIGS=( i3 sxhkd polybar kitty zsh picom )
 for c in "${CONFIGS[@]}"
 do
 	rm -rf $CONFIG/$c
