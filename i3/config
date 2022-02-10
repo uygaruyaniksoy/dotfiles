@@ -17,6 +17,7 @@ exec --no-startup-id pulseaudio --check
 exec --no-startup-id pulseaudio -D
 exec --no-startup-id pa-applet
 exec --no-startup-id blueman-applet
+exec --no-startup-id xfce4-power-manager
 
 bindsym $mod+e          layout default
 bindsym $mod+Shift+e    layout toggle tabbed stacking

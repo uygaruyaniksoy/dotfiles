@@ -64,7 +64,7 @@ wm-restack = i3
 tray-position = right
 
 modules-left = workspaces
-modules-right = temperature memory memoryswap cpu battery brightness sound wifi mediaplayer date kmonad
+modules-right = temperature memory memoryswap cpu battery wifi mediaplayer date
 
 
 ;Date correction
@@ -143,65 +143,6 @@ click-left = playerctl play-pause
 
 format-underline = ${colors.menucol-blue}
 format-foreground = ${colors.menucol-blue}
-
-;Network
-[module/wifi]
-type = internal/network
-interface = wlp59s0
-format-connected =  <ramp-signal>
-format-connected-padding = 2
-format-connected-foreground = ${colors.menucol-green}
-format-connected-underline = ${colors.menucol-green}
-
-format-disconnected = " "
-format-disconnected-font = 7
-format-disconnected-padding = 2
-format-disconnected-foreground = ${colors.menucol-yellow}
-format-disconnected-underline = ${colors.menucol-yellow}
-
-ramp-signal-0 = "   "
-ramp-signal-1 = "  ▂"
-ramp-signal-2 = "  ▄"
-ramp-signal-3 = "  ▅"
-ramp-signal-4 = "  ▇"
-ramp-signal-font = 7
-ramp-signal-foreground = ${colors.light}
-
-;Sound
-[module/sound]
-type = internal/alsa
-
-format-volume = <ramp-volume> <label-volume>
-format-volume-padding = 2
-format-volume-underline = ${colors.menucol-sealine}
-
-label-volume ="  %percentage%"
-
-label-volume-font = 3
-label-muted = "    (%percentage%)"
-label-muted-font = 3
-label-muted-padding = 2
-label-muted-foreground = ${colors.gray}
-label-muted-underline = ${colors.gray}
-
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-font = 7
-ramp-volume-foreground = ${colors.menucol-sealine}
-
-;Brightness
-[module/brightness]
-type = internal/xbacklight
-format = <label>
-format-padding = 2
-format-prefix = 
-format-underline = ${colors.menucol-yellow}
-format-prefix-foreground = ${colors.menucol-yellow}
-
-label = " %percentage%"
-label-font = 3
-
 
 ;Battery Indicator
 [module/battery]
