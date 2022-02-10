@@ -9,8 +9,6 @@ exec_always --no-startup-id sleep 0.1; sxhkd
 exec_always --no-startup-id sleep 0.1; picom
 exec_always --no-startup-id sleep 0.1; nm-applet
 exec_always --no-startup-id sleep 0.1; redshift
-exec_always --no-startup-id sleep 0.1; wal -i ~/.config/wall.png
-exec_always --no-startup-id sleep 0.1; wal -R
 exec_always --no-startup-id sleep 0.1; sh $HOME/.config/polybar/launch.sh
 
 bindsym $mod+e          layout default
