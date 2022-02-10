@@ -11,3 +11,6 @@ done
 # scripts
 rm -rf $HOME/.scripts
 ln -s $ROOT/scripts $HOME/.scripts
+
+rm -rf $HOME/.profile
+ln -s $ROOT/.profile $HOME/.profile
