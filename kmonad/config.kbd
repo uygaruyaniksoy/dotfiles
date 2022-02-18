@@ -85,63 +85,20 @@
 
   -------------------------------------------------------------------------- |#
 
+
 (defalias
-  sym (tap-hold-next-release 1000 (layer-add symbols) (layer-toggle symbols))
+  sym (layer-toggle symbols)
   qwe (layer-rem symbols)
   esx (tap-hold-next-release 1000 esc (layer-toggle nav))
   kil  C-A-del
+
+  mlc (cmd-button "xdotool click 1") 
+  mli (cmd-button "xdotool mousemove_relative -- -25 0") 
+  mdo (cmd-button "xdotool mousemove_relative -- 0 +25") 
+  mup (cmd-button "xdotool mousemove_relative -- 0 -25") 
+  mri (cmd-button "xdotool mousemove_relative -- 25 0") 
+  mrc (cmd-button "xdotool click 3") 
 )
-
-
-#| NOTE: The above code could just as easily have been written as:
-(defalias num (layer-toggle numbers))
-(defalias kil C-A-del)
-|#
-
-
-#| --------------------------------------------------------------------------
-                     Necessary: at least 1 `deflayer` block
-
-  As explained in the `defsrc` section, a `deflayer` will define a button for
-  each corresponding entry in the `defsrc` definition. A `deflayer` statement
-  consists of the `deflayer` keyword, followed by the name used to identify this
-  layer, followed by N 'statements-that-evaluate-to-a-button', where N is
-  exactly how many entries are defined in the `defsrc` statement.
-
-  It is also important to mention that the 'keymap' in KMonad is modelled as a
-  stack of layers (just like in QMK). When an event is registered we look in the
-  top-most layer for a handler. If we don't find one we try the next layer, and
-  then the next.
-
-  Exactly what 'evaluates-to-a-button' will be expanded on in more detail below.
-  There are very many different specialist buttons in KMonad that we will touch
-  upon. However, for now, these 4 are a good place to begin:
-
-  1. Any keycode evaluates to a button that, on press, emits the press of that
-     keycode, and on release, emits the release of that keycode. Just a 'normal'
-     button. The exception is '\', which gets used as an escape character. Use
-     '\\' instead. Other characters that need to be escaped to match the literal
-     character are '(', ')', and '_'.
-
-  2. An @-prefixed name evaluates to an alias lookup. We named two buttons in
-     the `defalias` block above, we could now refer to these buttons using
-     `@num` and `@kil`. This is also why we only use alias-names no longer than
-     3 characters in this tutorial. Also, note that we are already referencing
-     some aliases that have not yet been defined, this is not an issue.
-
-  3. The '_' character evaluates to transparent. I.e. no handler for that
-     key-event in this layer, causing this event to be handed down the layer
-     stack to perhaps be handled by the next layer.
-
-  4. The 'XX' character evaluates to blocked. I.e. no action bound to that
-     key-event in this layer, but do actually catch event, preventing any
-     underlying layer from handling it.
-
-  Finally, it is important to note that the *first* `deflayer` statement in a
-  KMonad config will be the layer that is active when KMonad starts up.
-
-  -------------------------------------------------------------------------- |#
-
 
 (deflayer qwerty
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
@@ -175,11 +132,11 @@
 )
 
 (deflayer nav
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    tab  vold volu _    _    _    _    _    prnt _    _    _
-  _    _    _    _    _    _    left down up   right ret   _    _
-  _    _    _    _    _    _    bspc del  _    _    _    _
-  _    _    _              _              _    _    _    _
+  _    _    _    _    _    _    _    _    _    _     _    _    _    _
+  _    _    tab  vold volu @mlc @mli @mdo @mup @mri  @mrc _    _    _
+  _    _    _    _    _    _    left down up   right ret  _    _
+  _    _    _    _    _    _    bspc del  _    _     _    _
+  _    _    _              _              _    _     _    _
 )
 
 

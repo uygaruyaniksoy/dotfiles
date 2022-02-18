@@ -23,19 +23,6 @@ super + {1,2,3,4,5,6,7,8,9,0}
 super + shift + {1,2,3,4,5,6,7,8,9,0}
     $HOME/.scripts/wm/hotkeys/move_to_workspace {1,2,3,4,5,6,7,8,9,0}
 
-super + y
-    xdotool click 1
-super + bracketleft
-    xdotool click 3
-super + u		    
-    xdotool mousemove_relative -- -25 0 
-super + i  		    
-    xdotool mousemove_relative -- 0 25 
-super + o   		
-    xdotool mousemove_relative -- 0 -25 
-super + p  		    
-    xdotool mousemove_relative -- 25 0 
-
 Print
     flameshot gui
 
