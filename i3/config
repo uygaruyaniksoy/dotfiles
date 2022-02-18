@@ -4,13 +4,11 @@ gaps outer 0
 set $mod Mod4
 floating_modifier $mod
 
-exec_always --no-startup-id sudo killall -9 sxhkd kmonad
+exec_always --no-startup-id killall -9 sxhkd kmonad
 exec_always --no-startup-id sleep 0.1; sxhkd
-exec_always --no-startup-id sleep 0.1; sudo kmonad $CONFIG/kmonad/config.kbd
+exec_always --no-startup-id sleep 0.1; kmonad $CONFIG/kmonad/config.kbd
 
-exec --no-startup-id sudo alsactl store
-exec --no-startup-id pulseaudio --check
-exec --no-startup-id pulseaudio -D
+exec --no-startup-id sleep 2; pkill -9 pulseaudio; pulseaudio -D
 exec --no-startup-id pa-applet
 exec --no-startup-id blueman-applet
 exec --no-startup-id xfce4-power-manager
