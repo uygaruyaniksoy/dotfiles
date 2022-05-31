@@ -11,15 +11,4 @@ export SHELL=zsh
 export BROWSER=google-chrome-stable
 
 # misc
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
-export QT_QPA_PLATFORMTHEME="qt5ct"
 export PATH="$PATH:$HOME/.scripts"
- 
-# aliases
-alias brightness='xrandr --output eDP-1 --brightness'
-alias rm='trash'
-
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
-
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
