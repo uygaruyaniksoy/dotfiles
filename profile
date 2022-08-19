@@ -4,11 +4,15 @@ export XDG_CONFIG_HOME=$CONFIG
 export ZDOTDIR="$CONFIG/zsh"
 
 # programs
-export EDITOR=nvim
-export TERMINAL=kitty
-export TERM=kitty
-export SHELL=zsh
-export BROWSER=google-chrome-stable
+# export EDITOR=nvim
+# export TERMINAL=kitty
+# export TERM=kitty
+# export SHELL=zsh
+# export BROWSER=google-chrome-stable
 
 # misc
 export PATH="$PATH:$HOME/.scripts"
+export PATH="$PATH:/opt/homebrew/bin/"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

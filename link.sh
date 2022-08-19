@@ -7,7 +7,7 @@ ln -s $PWD/profile $HOME/.profile
 source $HOME/.profile
 
 # config
-CONFIGS=( i3 sxhkd polybar kitty zsh picom kmonad karabiner )
+CONFIGS=( i3 sxhkd polybar kitty zsh picom kmonad karabiner tmux )
 for c in "${CONFIGS[@]}"
 do
 	echo "Link $c? (y/n)"
