@@ -1,23 +1,9 @@
 ```
-sudo apt-get install curl
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-
-#packages
-sudo apt install $(cat packages)
+echo "source ~/dotfiles/profile" > ~/.zshenv
 
 #oh-my-zsh
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 git clone https://github.com/zsh-users/zsh-autosuggestions             ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-#vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/          bundle/Vundle.vim\
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\
-     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim\
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \\
-    curl -lsso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-#bumblebee-status for i3
-git clone git://github.com/tobi-wan-kenobi/bumblebee-status .bumblebee-status
-cp ~/.bumblebee-status-modules/* ~/.bumblebee-status/bumblebee/modules/
 ```
