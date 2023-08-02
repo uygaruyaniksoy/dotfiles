@@ -2,6 +2,7 @@
 export DOTFILES="$HOME/dotfiles"
 export ZDOTDIR="$DOTFILES/zsh"
 export _Z_CMD=$ZDOTDIR/.z.sh
+alias z=$_Z_CMD
 
 # misc
 export PATH="$PATH:$HOME/.scripts"
