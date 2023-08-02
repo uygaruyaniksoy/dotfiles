@@ -91,7 +91,7 @@ alias ls='ls $LS_OPTIONS'
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#dd00dd,bold,underline,bg=#00000000,bold,underline"
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-source $CONFIG/antigen/antigen.zsh
+source $ZDOTDIR/antigen.zsh
 
 antigen use oh-my-zsh
 
@@ -99,7 +99,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle git
 antigen bundle extract
-antigen bundle tmux
 antigen bundle vi-mode
 antigen bundle command-not-found
 antigen bundle common-aliases
@@ -112,7 +111,7 @@ antigen apply
 HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 
-. $CONFIG/zsh/.z.sh
+. $ZDOTDIR/.z.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -130,4 +129,4 @@ export NVM_DIR="$CONFIG/nvm"
 
 # theme
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
-[[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
+[[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
